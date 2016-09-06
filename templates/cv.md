@@ -20,6 +20,7 @@ title: CV
 {% endraw %}
 
 ## Education
+<hr>
 
 {% for item in education %}
 **{{ item.school }}** <span class="pull-right">{{ item.date }}</span><br />
@@ -34,6 +35,7 @@ title: CV
 {% endfor %}
 
 ## Research
+<hr>
 
 {% for item in research %}
 **{{ item.name }}** <span class="pull-right">{{ item.location }}</span><br />
@@ -48,6 +50,7 @@ title: CV
 {% endfor %}
 
 ## Industry
+<hr>
 
 {% for item in industry %}
 **{{ item.company }}** <span class="pull-right">{{ item.location }}</span><br />
@@ -71,12 +74,14 @@ title: CV
 {% endfor %}
 
 ## Certificates
+<hr>
 
 {% for item in certificates %}
 **{{ item.name }}** <span class="pull-right">{{ item.date }}</span>
 {% endfor %}
 
 ## Skills
+<hr>
 
 {% for item in skills %}
 **{{ item.type }}** -- {{ item.details }}
@@ -87,6 +92,7 @@ title: CV
 {% endfor %}
 
 ## Affiliations
+<hr>
 
 {% for item in affiliations %}
 **{{ item.organization }}** <span class="pull-right">{{ item.title }}, {{ item.dates }}</span>

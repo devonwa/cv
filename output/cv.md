@@ -19,6 +19,7 @@ title: CV
 </div>
 
 ## Education
+<hr>
 
 **Carnegie Mellon University** <span class="pull-right">Expected December 2016</span><br />
 M.S., Chemical Engineering (4.0/4.0)<br />
@@ -31,6 +32,7 @@ B.S., Chemical Engineering (3.3/4.0)<br />
 <br />
 
 ## Research
+<hr>
 
 **Carnegie Mellon University, Prof. John Kitchin** <span class="pull-right">Pittsburgh, PA</span><br />
 Graduate researcher <span class="pull-right">January 2015 -- Present</span><br />
@@ -39,6 +41,7 @@ Graduate researcher <span class="pull-right">January 2015 -- Present</span><br /
 <br />
 
 ## Industry
+<hr>
 
 **EZSoft, Inc** <span class="pull-right">Malvern, PA</span><br />
 Automation Engineer <span class="pull-right">October 2012 -- July 2015</span><br />
@@ -64,10 +67,12 @@ Process Control Engineer Internship <span class="pull-right">May 2011 -- Decembe
 
 
 ## Certificates
+<hr>
 
 **Fundamentals of Engineering Exam (EIT)** <span class="pull-right">April 2012</span>
 
 ## Skills
+<hr>
 
 **Applications** -- Proficient in Aspen Plus, Microsoft Office, Cross-disciplinary Design, Linux, Virtual Machines, Ethernet Networking. Familiar with AutoCAD, SolidWorks.
 <br />
@@ -76,6 +81,7 @@ Process Control Engineer Internship <span class="pull-right">May 2011 -- Decembe
 <br />
 
 ## Affiliations
+<hr>
 
 **American Institute of Chemical Engineers** <span class="pull-right">Member, 2010 -- Present</span>
 <br />
