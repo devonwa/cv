@@ -10,7 +10,7 @@ title: CV
 # Devon Walker
 [PDF](/static/page/cv/Devon-Walker-Resume.pdf)
 &#124;
-[source](https://github.com/devonwa/latex-resume/blob/master/Walker%2C%20Devon%20-%20Resume.tex)
+[source](https://github.com/devonwa/cv)
 &#124;
 <a href="mailto:{% include email.html %}">{% include email.html %}</a>
 &#124;
@@ -37,7 +37,7 @@ title: CV
 
 {% for item in research %}
 **{{ item.name }}** <span class="pull-right">{{ item.location }}</span><br />
-_{{ item.title }}_ <span class="pull-right">{{ item.dates }}</span><br />
+{{ item.title }} <span class="pull-right">{{ item.dates }}</span><br />
 
 {% if item.details %}
 {% for detail in item.details %}
@@ -51,7 +51,7 @@ _{{ item.title }}_ <span class="pull-right">{{ item.dates }}</span><br />
 
 {% for item in industry %}
 **{{ item.company }}** <span class="pull-right">{{ item.location }}</span><br />
-_{{ item.title }}_ <span class="pull-right">{{ item.dates }}</span><br />
+{{ item.title }} <span class="pull-right">{{ item.dates }}</span><br />
 
 {% if item.details %}
 {% for detail in item.details %}

@@ -10,7 +10,7 @@ title: CV
 # Devon Walker
 [PDF](/static/page/cv/Devon-Walker-Resume.pdf)
 &#124;
-[source](https://github.com/devonwa/latex-resume/blob/master/Walker%2C%20Devon%20-%20Resume.tex)
+[source](https://github.com/devonwa/cv)
 &#124;
 <a href="mailto:{% include email.html %}">{% include email.html %}</a>
 &#124;
@@ -33,7 +33,7 @@ B.S., Chemical Engineering (3.3/4.0)<br />
 ## Research
 
 **Carnegie Mellon University, Prof. John Kitchin** <span class="pull-right">Pittsburgh, PA</span><br />
-_Graduate researcher_ <span class="pull-right">January 2015 -- Present</span><br />
+Graduate researcher <span class="pull-right">January 2015 -- Present</span><br />
 
 * Developing an empirical potential for graphene with a neural network.
 <br />
@@ -41,7 +41,7 @@ _Graduate researcher_ <span class="pull-right">January 2015 -- Present</span><br
 ## Industry
 
 **EZSoft, Inc** <span class="pull-right">Malvern, PA</span><br />
-_Automation Engineer_ <span class="pull-right">October 2012 -- July 2015</span><br />
+Automation Engineer <span class="pull-right">October 2012 -- July 2015</span><br />
 
 * Provided on-site support for the research and development group within a major pharmaceutical company starting in January 2013.
 
@@ -52,15 +52,15 @@ _Automation Engineer_ <span class="pull-right">October 2012 -- July 2015</span><
 
 <br />
 **Classic Industries** <span class="pull-right">Latrobe, PA</span><br />
-_Quality Engineer_ <span class="pull-right">August 2012 -- September 2012</span><br />
+Quality Engineer <span class="pull-right">August 2012 -- September 2012</span><br />
 
 <br />
 **US Liner Company** <span class="pull-right">Cranberry, PA</span><br />
-_Research Engineer Internship_ <span class="pull-right">January 2012 -- May 2012</span><br />
+Research Engineer Internship <span class="pull-right">January 2012 -- May 2012</span><br />
 
 <br />
 **Chemical Engr. Dept., University of Pittsburgh** <span class="pull-right">Pittsburgh, PA</span><br />
-_Process Control Engineer Internship_ <span class="pull-right">May 2011 -- December 2011</span><br />
+Process Control Engineer Internship <span class="pull-right">May 2011 -- December 2011</span><br />
 
 
 ## Certificates
