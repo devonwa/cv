@@ -16,6 +16,8 @@ title: CV
 &#124;
 <a href="https://www.linkedin.com/in/devonwalker">LinkedIn</a>
 <br />
+<br />
+**I am currently seeking internship opportunities between January and August 2017, before entering a PhD program in the fall.**
 </div>
 {% endraw %}
 
