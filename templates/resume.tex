@@ -1,0 +1,143 @@
+\documentclass[11pt]{article}
+
+\usepackage{array}
+\usepackage{bold-extra}
+\usepackage{comment} % see texblog.org/2007/12/31/commenting-in-latex/ for a cool use.
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{microtype} % always use after fonts, if any
+\usepackage[margin=1.0in]{geometry} % Margins
+
+% Itemize list padding
+\setlist{nosep, after=\vspace{-0.5\baselineskip}, leftmargin=*}
+
+\begin{document}
+
+\title{Resume}
+\author{Devon Walker}
+\date{August, 28, 2016}
+
+% No page number
+\thispagestyle{empty}
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Info
+\begin{center}
+    {\LARGE\textbf{<< info.name >>}} \\
+    << info.phone >> $\diamond$ << info.email >> \\
+    << info.location >> \vspace{0.5\baselineskip} \hrule
+\end{center}
+
+\vspace{0.5\baselineskip}\noindent
+\renewcommand{\arraystretch}{1}%
+\begin{tabular}[t]{@{}p{1.15in} @{}p{5.35in}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{Research}
+<<* for item in research *>>
+&
+\textbf{<< item.name >>}  \hfill << item.location >>\vspace{0.015in} \\ &
+<< item.title >> \hfill << item.dates >>\vspace{0.015in}
+<<* if item.details *>>
+\begin{itemize}
+    \renewcommand{\labelitemi}{$\diamond$}
+<<* for detail in item.details *>>
+    \item << detail >>
+<<* endfor *>>
+\end{itemize}
+<<* else *>>
+\vspace{0.5\baselineskip}
+<<* endif *>>
+\\
+<<* endfor *>>
+\vspace{0.5\baselineskip}
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{Industry}
+<<* for item in industry *>>
+&
+\textbf{<< item.company >>}  \hfill << item.location >>\vspace{0.015in} \\ &
+<< item.title >> \hfill << item.dates >>\vspace{0.015in}
+<<* if item.details *>>
+\begin{itemize}
+    \renewcommand{\labelitemi}{$\diamond$}
+<<* for detail in item.details *>>
+<<* if detail is string *>>
+    \item << detail >>
+<<* else *>>
+    \begin{itemize}
+    \renewcommand{\labelitemii}{$\cdot$}
+<<* for subdetail in detail *>>
+        \item << subdetail >>
+<<* endfor *>>
+    \end{itemize}
+    \vspace{0.5\baselineskip}
+<<* endif *>>
+<<* endfor *>>
+\end{itemize}
+<<* else *>>
+\vspace{0.5\baselineskip}
+<<* endif *>>
+\\
+<<* endfor *>>
+\vspace{0.5\baselineskip}
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{Education}
+<<* for item in education *>>
+&
+\textbf{<< item.school >>} \hfill << item.date >> \vspace{0.015in} \\ &
+<< item.degree >> \vspace{0.015in}
+<<* if item.details *>>
+\begin{itemize}
+    \renewcommand{\labelitemi}{$\diamond$}
+<<* for detail in item.details *>>
+    \item << detail >>
+<<* endfor *>>
+\end{itemize}
+<<* else *>>
+\vspace{0.5\baselineskip}
+<<* endif *>>
+\\
+<<* endfor *>>
+\vspace{0.5\baselineskip}
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{Certificates}
+<<* for item in certificates *>>
+&
+\textbf{<< item.name >>} \hfill << item.date >>
+\vspace{0.5\baselineskip}
+\\
+<<* endfor *>>
+\vspace{0.5\baselineskip}
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{Skills}
+<<* for item in skills *>>
+&
+\textbf{<< item.type >>:} << item.details >>
+\vspace{0.5\baselineskip}
+\\
+<<* endfor *>>
+\vspace{0.5\baselineskip}
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{Affiliations}
+<<* for item in affiliations *>>
+&
+\textbf{<< item.organization >>} \hfill{<< item.title >>, << item.dates >>}
+<<* if not loop.last *>>
+\\
+<<* endif *>>
+<<* endfor *>>
+
+\end{tabular}
+
+\end{document}

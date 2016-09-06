@@ -1,0 +1,101 @@
+---
+info:
+  name: Devon Walker
+  phone: 717-304-2186
+  email: devonw@andrew.cmu.edu
+  location: Pittsburgh, PA
+
+
+education:
+  - school: Carnegie Mellon University
+    degree: M.S., Chemical Engineering (4.0/4.0)
+    date: Expected December 2016
+
+  - school: University of Pittsburgh
+    degree: B.S., Chemical Engineering (3.3/4.0)
+    date: April 2012
+    details:
+      - Minor in Computer Science
+
+  #- school: Cedar Crest High School (Lebanon, PA)
+  #  date: April 2008
+
+
+research:
+  - name: Carnegie Mellon University, Prof. John Kitchin
+    location: Pittsburgh, PA
+    title: Graduate researcher
+    dates: January 2015 -- Present
+    details:
+      - Developing an empirical potential for graphene with a neural network.
+
+
+industry:
+  - company: EZSoft, Inc
+    location: Malvern, PA
+    title: Automation Engineer
+    dates: October 2012 -- July 2015
+    details:
+      - Provided on-site support for the research and development group within a major pharmaceutical company starting in January 2013.
+      -
+        - Managed projects for integrating new technologies into a prototype process.
+        - Recorded experiment data into a database and using statistical analysis to develop further experiments and provide presentations to superiors.
+      - Developed an HMI application for a bakery with over twelve hundred I/O points spanning three synchronous control system PLCs.
+
+  - company: Classic Industries
+    location: Latrobe, PA
+    title: Quality Engineer
+    dates: August 2012 -- September 2012
+    #details:
+    #  - Documented mold qualifications for a merger of two production plants.
+
+  - company: US Liner Company
+    location: Cranberry, PA
+    title: Research Engineer Internship
+    dates: January 2012 -- May 2012
+    #details:
+    #  - Tested products against ASTM standards with an Instron machine.
+    #  - Prepared result reports for management and sales with Microsoft Office Suite.
+
+  - company: Chemical Engr. Dept., University of Pittsburgh
+    location: Pittsburgh, PA
+    title: Process Control Engineer Internship
+    dates: May 2011 -- December 2011
+    #details: 
+    #  - Developed the LabView control systems for seven laboratory experiments used by all students taking the senior chemical engineering lab.
+    #  - Designed a double-pipe heat exchanger experiment.  Modeled the system using first principles in Simulink and wrote the lab manual for student use.
+
+  #- company: The Cartilage Restoration Center, UPMC
+  #  location: Pittsburgh, PA
+  #  title: Website Developer Internship
+  #  dates: August 2010 -- April 2011
+
+
+certificates:
+  - name: Fundamentals of Engineering Exam (EIT)
+    date: April 2012
+
+
+skills:
+  - type: Applications
+    details: Proficient in Aspen Plus, Microsoft Office, Cross-disciplinary Design, Linux, Virtual Machines, Ethernet Networking. Familiar with AutoCAD, SolidWorks.
+
+  - type: Programming languages
+    details: Python, Matlab, Simulink, LabView, SQL, C\#, VBA, Java, PLC Ladder Logic, Latex.
+
+  #- type: Expertise
+  #  details: Simulation, Machine learning, Process Modeling, Process Optimization
+
+ 
+affiliations:
+  - organization: American Institute of Chemical Engineers
+    title: Member
+    dates: 2010 -- Present
+
+  - organization: Order of the Engineer
+    title: Member
+    dates: 2012 -- Present
+
+community:
+  - type: North Light Community Center
+    details: Redesigned the website built in Wordpress.

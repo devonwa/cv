@@ -1,0 +1,12 @@
+* CV
+
+Write your CV in YAML and export it to latex, markdown, and org-mode.
+
+** Dependencies
+- Written in Python 3.5
+- [[http://pyyaml.org/wiki/PyYAML][PyYAML]] ~pip install PyYAML~
+
+# ** Install
+# 
+# - ~git clone https://github.com/devonwa/cv~
+# - ~python cv/setup.py install~
