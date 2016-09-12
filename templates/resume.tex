@@ -6,7 +6,7 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{microtype} % always use after fonts, if any
-\usepackage[margin=1.0in]{geometry} % Margins
+\usepackage[margin=0.75in]{geometry} % Margins
 
 % Itemize list padding
 \setlist{nosep, after=\vspace{-0.5\baselineskip}, leftmargin=*}
@@ -22,23 +22,23 @@
 \pagestyle{empty}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Info
+% Info
 \begin{center}
     {\LARGE\textbf{<< info.name >>}} \\
-    << info.phone >> $\diamond$ << info.email >> \\
-    << info.location >> \vspace{0.5\baselineskip} \hrule
+    << info.email >> $\diamond$ << info.phone >> $\diamond$ << info.location >> \\
+    << info.site >> $\diamond$ << info.linkedin >> \vspace{0.25\baselineskip} \hrule
 \end{center}
 
 \vspace{0.5\baselineskip}\noindent
 \renewcommand{\arraystretch}{1}%
-\begin{tabular}[t]{@{}p{1.15in} @{}p{5.35in}}
+\begin{tabular}[t]{@{}p{1.05in} @{}p{6.00in}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{Research}
-<<* for item in research *>>
+{Education}
+<<* for item in education *>>
 &
-\textbf{<< item.name >>}  \hfill << item.location >>\vspace{0.015in} \\ &
-<< item.title >> \hfill << item.dates >>\vspace{0.015in}
+\textbf{<< item.school >>} \hfill << item.date >> \vspace{0.015in} \\ &
+<< item.degree >> (GPA: << item.gpa >>)\vspace{0.015in}
 <<* if item.details *>>
 \begin{itemize}
     \renewcommand{\labelitemi}{$\diamond$}
@@ -51,7 +51,29 @@
 <<* endif *>>
 \\
 <<* endfor *>>
-\vspace{0.5\baselineskip}
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{Research}
+<<* for item in research *>>
+&
+\textbf{<< item.name >>}  \hfill << item.location >>\vspace{0.015in} \\ &
+<< item.title >> \hfill << item.dates >>\vspace{0.015in} \\ &
+<<* for p in item.project *>>
+<< p.title >> \vspace{0.015in}
+    <<* if p.details *>>
+    \begin{itemize}
+        \renewcommand{\labelitemi}{$\diamond$}
+        <<* for detail in p.details *>>
+        \item << detail >>
+        <<* endfor *>>
+    \end{itemize}
+    <<* else *>>
+    \vspace{0.5\baselineskip}
+    <<* endif *>>
+<<* endfor *>>
+\\
+<<* endfor *>>
 \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -82,28 +104,6 @@
 <<* endif *>>
 \\
 <<* endfor *>>
-\vspace{0.5\baselineskip}
-\\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{Education}
-<<* for item in education *>>
-&
-\textbf{<< item.school >>} \hfill << item.date >> \vspace{0.015in} \\ &
-<< item.degree >> \vspace{0.015in}
-<<* if item.details *>>
-\begin{itemize}
-    \renewcommand{\labelitemi}{$\diamond$}
-<<* for detail in item.details *>>
-    \item << detail >>
-<<* endfor *>>
-\end{itemize}
-<<* else *>>
-\vspace{0.5\baselineskip}
-<<* endif *>>
-\\
-<<* endfor *>>
-\vspace{0.5\baselineskip}
 \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -114,7 +114,6 @@
 \vspace{0.5\baselineskip}
 \\
 <<* endfor *>>
-\vspace{0.5\baselineskip}
 \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -125,7 +124,6 @@
 \vspace{0.5\baselineskip}
 \\
 <<* endfor *>>
-\vspace{0.5\baselineskip}
 \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%

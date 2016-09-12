@@ -3,16 +3,20 @@ info:
   name: Devon Walker
   phone: 717-304-2186
   email: devonw@andrew.cmu.edu
+  site: devonwa.com
+  linkedin: linkedin.com/in/devonwalker
   location: Pittsburgh, PA
 
 
 education:
   - school: Carnegie Mellon University
-    degree: M.S., Chemical Engineering (4.0/4.0)
-    date: Expected December 2016
+    degree: M.S. in Chemical Engineering
+    gpa: 4.0/4.0
+    date: December 2016
 
   - school: University of Pittsburgh
-    degree: B.S., Chemical Engineering (3.3/4.0)
+    degree: B.S. in Chemical Engineering
+    gpa: 3.3/4.0
     date: April 2012
     details:
       - Minor in Computer Science
@@ -22,12 +26,16 @@ education:
 
 
 research:
-  - name: Carnegie Mellon University, Prof. John Kitchin
+  - name: Carnegie Mellon University
     location: Pittsburgh, PA
-    title: Graduate researcher
+    title: "Master's Thesis, Advisor: Prof. John Kitchin"
     dates: January 2015 -- Present
-    details:
-      - Developing an empirical potential for graphene with a neural network.
+    project:
+      - title: 'Working Title: A neural network empirical potential for graphene defect structures.'
+        details:
+          # - Created a Python toolkit for working with 2D materials in ASE.
+          - Performed \textit{ab initio} calculations using DFT with VASP on algorithmically generated graphene defect structures.
+          - Developed neural networks to use as potentials in MD simulations with the accuracy of DFT and computational cost similar to empirical potentials.
 
 
 industry:
@@ -36,34 +44,35 @@ industry:
     title: Automation Engineer
     dates: October 2012 -- July 2015
     details:
-      - Provided on-site support for the research and development group within a major pharmaceutical company starting in January 2013.
+      - Deployed to provide on-site support for the research and development group within a major pharmaceutical company.
       -
-        - Managed projects for integrating new technologies into a prototype process.
-        - Recorded experiment data into a database and using statistical analysis to develop further experiments and provide presentations to superiors.
-      - Developed an HMI application for a bakery with over twelve hundred I/O points spanning three synchronous control system PLCs.
+        - Managed three projects for integrating new technologies into a prototype process.
+        - Recorded experiment data into a SQL database and used statistical analysis to develop further experiments and deliver presentations to superiors for project funding.
+      - Developed the operator interface for a bakery with over twelve hundred I/O points spanning three synchronous Allen-Bradley PLCs.
 
-  - company: Classic Industries
-    location: Latrobe, PA
-    title: Quality Engineer
-    dates: August 2012 -- September 2012
-    #details:
-    #  - Documented mold qualifications for a merger of two production plants.
+  # - company: Classic Industries
+  #   location: Latrobe, PA
+  #   title: Quality Engineer (Contract position)
+  #   dates: August 2012 -- September 2012
+  #   details:
+  #     - Documented polymer mold qualifications for a merger of two production plants.
 
   - company: US Liner Company
-    location: Cranberry, PA
+    location: Cranberry Twp, PA
     title: Research Engineer Internship
     dates: January 2012 -- May 2012
-    #details:
-    #  - Tested products against ASTM standards with an Instron machine.
-    #  - Prepared result reports for management and sales with Microsoft Office Suite.
+    details:
+      - Furthered product development by testing polymer materials using ASTM standards.
+      # - Tested polymer products against ASTM standards with an Instron machine to determine the best material candidates for product development efforts.
+      # - Prepared research summary reports for superiors to compare the best candidates for materials and processes.
 
   - company: Chemical Engr. Dept., University of Pittsburgh
     location: Pittsburgh, PA
     title: Process Control Engineer Internship
     dates: May 2011 -- December 2011
-    #details: 
-    #  - Developed the LabView control systems for seven laboratory experiments used by all students taking the senior chemical engineering lab.
-    #  - Designed a double-pipe heat exchanger experiment.  Modeled the system using first principles in Simulink and wrote the lab manual for student use.
+    details: 
+      - Developed the LabView control systems for seven laboratory experiments used by all students taking the senior chemical engineering lab.
+      #- Modeled a double-pipe heat exchanger experiment using first principles in Simulink and wrote the lab manual for student use.
 
   #- company: The Cartilage Restoration Center, UPMC
   #  location: Pittsburgh, PA
@@ -78,13 +87,13 @@ certificates:
 
 skills:
   - type: Applications
-    details: Proficient in Aspen Plus, Microsoft Office, Cross-disciplinary Design, Linux, Virtual Machines, Ethernet Networking. Familiar with AutoCAD, SolidWorks.
+    details: SciPy, LAMMPS, VASP, Aspen Plus, Microsoft Office, Linux, Virtual Machines, Ethernet Networking, RSLogix, FactoryTalk View
 
   - type: Programming languages
-    details: Python, Matlab, Simulink, LabView, SQL, C\#, VBA, Java, PLC Ladder Logic, Latex.
+    details: Python, Matlab, Simulink, LabView, SQL, C\#, VBA, Java, PLC Ladder Logic, HTML, CSS, \LaTeX
 
   #- type: Expertise
-  #  details: Simulation, Machine learning, Process Modeling, Process Optimization
+  #  details: Simulation, Machine Learning, Process Modeling, Cross-disciplinary Design, Process Optimization
 
  
 affiliations:
@@ -95,6 +104,7 @@ affiliations:
   - organization: Order of the Engineer
     title: Member
     dates: 2012 -- Present
+
 
 community:
   - type: North Light Community Center

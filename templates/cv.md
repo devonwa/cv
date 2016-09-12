@@ -13,11 +13,9 @@ title: CV
 [source](https://github.com/devonwa/cv)
 &#124;
 <a href="mailto:{% include email.html %}">{% include email.html %}</a>
-&#124;
-<a href="https://www.linkedin.com/in/devonwalker">LinkedIn</a>
 <br />
 <br />
-**I am currently seeking internship opportunities between January and August 2017, before entering a PhD program in the fall.**
+**I am currently seeking internship opportunities between January and August 2017, before entering a Ph.D. program in the fall.**
 </div>
 {% endraw %}
 
@@ -26,7 +24,7 @@ title: CV
 
 {% for item in education %}
 **{{ item.school }}** <span class="pull-right">{{ item.date }}</span><br />
-{{ item.degree }}<br />
+{{ item.degree }} (GPA: {{ item.gpa }})<br />
 
 {% if item.details %}
 {% for detail in item.details %}
@@ -42,12 +40,16 @@ title: CV
 {% for item in research %}
 **{{ item.name }}** <span class="pull-right">{{ item.location }}</span><br />
 {{ item.title }} <span class="pull-right">{{ item.dates }}</span><br />
+{% for p in item.project %}
+{{ p.title }}
 
-{% if item.details %}
-{% for detail in item.details %}
+{% if p.details %}
+{% for detail in p.details %}
 * {{ detail }}
 {% endfor %}
+{% else %}
 {% endif %}
+{% endfor %}
 <br />
 {% endfor %}
 
@@ -86,7 +88,7 @@ title: CV
 <hr>
 
 {% for item in skills %}
-**{{ item.type }}** -- {{ item.details }}
+**{{ item.type }}:** {{ item.details }}
 <br />
 {% if not loop.last %}
 <br />
