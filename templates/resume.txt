@@ -1,0 +1,68 @@
+<< info.name >>
+<< info.email >> -- << info.phone >> -- << info.location >>
+<< info.site >> -- << info.linkedin >>
+
+=============
+Education
+
+<<* for item in education *>>
+<< item.school >> -- << item.date >>
+- << item.degree >> (GPA: << item.gpa >>)
+<<* if item.details *>>
+<<* for detail in item.details *>>
+- << detail >>
+<<* endfor *>>
+<<* else *>>
+<<* endif *>>
+<<* endfor *>>
+
+=============
+Research
+
+<<* for item in research *>>
+<< item.name >> -- << item.location >>
+<< item.title >> -- << item.dates >>
+<<* for p in item.project *>>
+<< p.title >>
+<<* if p.details *>>
+<<* for detail in p.details *>>
+- << detail >>
+<<* endfor *>>
+<<* else *>>
+<<* endif *>>
+<<* endfor *>>
+<<* endfor *>>
+
+=============
+Industry
+
+<<* for item in industry *>>
+<< item.company >> -- << item.location >>
+<< item.title >> -- << item.dates >>
+<<* if item.details *>>
+<<* for detail in item.details *>>
+<<* if detail is string *>>
+- << detail >>
+<<* else *>>
+<<* for subdetail in detail *>>
+- - << subdetail >>
+<<* endfor *>>
+<<* endif *>>
+<<* endfor *>>
+<<* else *>>
+<<* endif *>>
+<<* endfor *>>
+
+=============
+Skills
+
+<<* for item in skills *>>
+- << item.type >>: << item.details >>
+<<* endfor *>>
+
+=============
+Certificates
+
+<<* for item in certificates *>>
+- << item.name >> -- << item.date >>
+<<* endfor *>>
