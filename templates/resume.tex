@@ -65,7 +65,7 @@
     \begin{itemize}
         \renewcommand{\labelitemi}{$\diamond$}
         <<* for detail in p.details *>>
-        \item << detail >>
+        \item << detail >>%
         <<* endfor *>>
     \end{itemize}
     <<* else *>>
@@ -87,12 +87,12 @@
     \renewcommand{\labelitemi}{$\diamond$}
 <<* for detail in item.details *>>
 <<* if detail is string *>>
-    \item << detail >>
+    \item << detail >>%
 <<* else *>>
     \begin{itemize}
     \renewcommand{\labelitemii}{$\cdot$}
 <<* for subdetail in detail *>>
-        \item << subdetail >>
+        \item << subdetail >>%
 <<* endfor *>>
     \end{itemize}
     \vspace{0.5\baselineskip}
@@ -107,34 +107,24 @@
 \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{Certificates}
-<<* for item in certificates *>>
-&
-\textbf{<< item.name >>} \hfill << item.date >>
-\vspace{0.5\baselineskip}
-\\
-<<* endfor *>>
-\\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {Skills}
 <<* for item in skills *>>
 &
-\textbf{<< item.type >>:} << item.details >>
+\textbf{<< item.type >>:} << item.details >>%
 \vspace{0.5\baselineskip}
 \\
 <<* endfor *>>
 \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{Affiliations}
-<<* for item in affiliations *>>
+{Certificates}
+<<* for item in certificates *>>
 &
-\textbf{<< item.organization >>} \hfill{<< item.title >>, << item.dates >>}
-<<* if not loop.last *>>
+\textbf{<< item.name >>} \hfill << item.date >>%
+\vspace{0.5\baselineskip}
 \\
-<<* endif *>>
 <<* endfor *>>
+\\
 
 \end{tabular}
 
