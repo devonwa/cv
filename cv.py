@@ -17,7 +17,9 @@ TEX_OPTIONS = {"block_start_string": '<<*',
                "variable_start_string": '<<',
                "variable_end_string": '>>',
                "comment_start_string": '<#',
-               "comment_end_string": '#>'}
+               "comment_end_string": '#>',
+               "trim_blocks": True,
+               "lstrip_blocks": True}
 
 build_pdf = True
 
@@ -25,10 +27,12 @@ build_pdf = True
 def generate_all():
     """Render all templates in the template directory."""
     for f in os.listdir(TEMPLATES_DIR):
+        if os.path.isdir(os.path.join(TEMPLATES_DIR, f)):
+            continue
         extension = f.split(".")[-1]
 
         options = {"trim_blocks": True}
-        if extension == "tex":
+        if extension == "tex" or extension == "txt":
             options.update(TEX_OPTIONS)
 
         loader = FileSystemLoader(TEMPLATES_DIR)
@@ -71,6 +75,7 @@ def build_pdf_from_tex(file_path):
     try:
         name = os.path.basename(fp).split(".")[0] + ".pdf"
         code = subprocess.call(['pdflatex', fp])
+        code = subprocess.call(['pdflatex', fp]) # Run twice
         shutil.copy(name, output_dir)
     finally:
         shutil.rmtree(tmp_dir)
