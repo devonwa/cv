@@ -2,7 +2,7 @@
 info:
   name: Devon Walker
   phone: 717-304-2186
-  email: devonw@andrew.cmu.edu
+  email: devon@devonwa.com
   site: devonwa.com
   linkedin: linkedin.com/in/devonwalker
   location: Pittsburgh, PA
@@ -10,12 +10,12 @@ info:
 
 education:
   - school: Carnegie Mellon University
-    degree: M.S. in Chemical Engineering
+    degree: Master of Science in Chemical Engineering
     gpa: 4.0/4.0
     date: December 2016
 
   - school: University of Pittsburgh
-    degree: B.S. in Chemical Engineering
+    degree: Bachelor of Science in Chemical Engineering
     gpa: 3.3/4.0
     date: April 2012
     details:
@@ -29,17 +29,18 @@ research:
   - name: Carnegie Mellon University
     location: Pittsburgh, PA
     title: "Master's Thesis, Advisor: Prof. John Kitchin"
-    dates: January 2015 -- Present
+    dates: January 2015 -- December 2016
     project:
-      - title: 'Working Title: A neural network empirical potential for graphene defect structures.'
+      - title: "Title: A neural network potential for nanoporous graphene."
         details:
-          # - Created a Python toolkit for working with 2D materials in ASE.
-          - Performed \textit{ab initio} calculations using DFT with VASP on algorithmically generated graphene defect structures.
-          - Developed neural networks to use as potentials in MD simulations with the accuracy of DFT and computational cost similar to empirical potentials.
+          - Performed \textit{ab initio} molecular simulations on a stochastic sampling of nanopores in graphene in order to train a neural network potential suitable for dynamic simulations.
+          - Code for simulations and neural network training were written in Python and executed in parallel on a Linux-based distributed computing cluster.
+          # - Performed \textit{ab initio} calculations using DFT with VASP on algorithmically generated graphene defect structures.
+          # - Developed neural networks to use as potentials in MD simulations with the accuracy of DFT and a computational cost similar to physical potentials.
 
 
 industry:
-  - company: EZSoft, Inc
+  - company: EZSoft, Inc.
     location: Malvern, PA
     title: Automation Engineer
     dates: October 2012 -- July 2015
@@ -80,22 +81,40 @@ industry:
   #  dates: August 2010 -- April 2011
 
 
+presentations:
+  - "\\textbf{D. Walker*}, J. Kitchin. Minimum energy search over graphene defect structures using a neural network potential. Poster presentation at the 2016 ChEGSA Symposium, Carnegie Mellon University, Pittsburgh, PA. October 21, 2016. DOI: \\href{https://doi.org/10.5281/zenodo.188625}{10.5281/zenodo.188625}."
+  - "\\textbf{D. Walker*}. Hands-on learning in the classroom with Org-mode. Poster presentation at the 2016 Teaching and Learning Summit, Carnegie Mellon University, Pittsburgh, PA. October 14, 2016. DOI: \\href{https://doi.org/10.5281/zenodo.160762}{10.5281/zenodo.160762}."
+
+#  - authors:
+#      - Devon Walker
+#      - John Kitchin
+#  - presentor: Devon Walker
+#  - title: Minimum energy search over graphene defect structures using a neural network potential
+#  - type: Poster presentation
+#  - venue: 2016 ChEGsa Symposium
+#  - location: Carnegie Mellon University, Pittsburgh, PA
+#  - url: https://doi.org/10.5281/zenodo.188625
+
+
+skills:
+  - type: Expertise
+    details: Mathematical Modeling and Simulation, Statistical Data Analysis, Object Oriented Programming, Machine Learning, Optimization, Unix/Linux Environments.
+    
+  - type: Software
+    details:  COMSOL, ASPEN Plus, Microsoft Office, RSLogix, FactoryTalk View, SQL Server, SciPy, Git, Google Apps, Virtual Machines.
+
+  - type: Programming languages
+    details: Proficient in C\#, Python, Java, MATLAB, PLC Ladder Logic, LabView, HTML, CSS, LaTeX. Familiar with C{}\verb!++!, SQL, Go, VBA.
+
+  #- type: Expertise
+  #  details: Simulation, Machine Learning, Process Modeling, Cross-disciplinary Design, Process Optimization
+
+
 certificates:
   - name: Fundamentals of Engineering Exam (EIT)
     date: April 2012
 
 
-skills:
-  - type: Applications
-    details: SciPy, LAMMPS, VASP, Aspen Plus, Microsoft Office, Linux, Virtual Machines, Ethernet Networking, RSLogix, FactoryTalk View
-
-  - type: Programming languages
-    details: Python, Matlab, Simulink, LabView, SQL, C\#, VBA, Java, PLC Ladder Logic, HTML, CSS, \LaTeX
-
-  #- type: Expertise
-  #  details: Simulation, Machine Learning, Process Modeling, Cross-disciplinary Design, Process Optimization
-
- 
 affiliations:
   - organization: American Institute of Chemical Engineers
     title: Member
@@ -109,3 +128,4 @@ affiliations:
 community:
   - type: North Light Community Center
     details: Redesigned the website built in Wordpress.
+    dates: 2013
