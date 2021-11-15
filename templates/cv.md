@@ -5,33 +5,50 @@ title: CV
 
 {::options parse_block_html="true" /}
 <div class="cv">
-{% raw %}
-<div class="text-center">
-# Devon Walker
+<div class="row">
+<div class="col-xs-8">
+<div class="text-left">
+# {{ info.name }}
 [PDF](/static/page/cv/Devon-Walker-Resume.pdf)
 &#124;
 [source](https://github.com/devonwa/cv)
 &#124;
+{% raw %}
 <a href="mailto:{% include email.html %}">{% include email.html %}</a>
-<br />
-<br />
-**I am currently seeking internship opportunities between January and August 2017, before entering a Ph.D. program in the fall.**
-</div>
 {% endraw %}
+<br />
+<br />
+</div>
+</div>
+<div class="col-xs-4">
+<img class="img-responsive img-circle cv-pic" src="../static/image/2014-10-05-me-head-100x100.jpg" />
+</div>
+</div>
 
-## Education
+## Industry
 <hr>
 
-{% for item in education %}
-**{{ item.school }}** <span class="pull-right">{{ item.date }}</span><br />
-{{ item.degree }} (GPA: {{ item.gpa }})<br />
+{% for item in industry %}
+**{{ item.company }}** <span class="pull-right">{{ item.location }}</span><br />
+{% for position in item.positions %}
+{{ position.title }} <span class="pull-right">{{ position.dates }}</span><br />
+{% endfor %}
 
 {% if item.details %}
 {% for detail in item.details %}
+{% if detail is string %}
 * {{ detail }}
+{% else %}
+{% for subdetail in detail %}
+  * {{ subdetail }}
 {% endfor %}
 {% endif %}
+
+{% endfor %}
+{% endif %}
+{% if not loop.last %}
 <br />
+{% endif %}
 {% endfor %}
 
 ## Research
@@ -53,35 +70,19 @@ title: CV
 <br />
 {% endfor %}
 
-## Industry
+## Education
 <hr>
 
-{% for item in industry %}
-**{{ item.company }}** <span class="pull-right">{{ item.location }}</span><br />
-{{ item.title }} <span class="pull-right">{{ item.dates }}</span><br />
+{% for item in education %}
+**{{ item.school }}** <span class="pull-right">{{ item.date }}</span><br />
+{{ item.degree }} {{ item.gpa }}.<br />
 
 {% if item.details %}
 {% for detail in item.details %}
-{% if detail is string %}
 * {{ detail }}
-{% else %}
-{% for subdetail in detail %}
-  * {{ subdetail }}
 {% endfor %}
 {% endif %}
-
-{% endfor %}
-{% endif %}
-{% if not loop.last %}
 <br />
-{% endif %}
-{% endfor %}
-
-## Certificates
-<hr>
-
-{% for item in certificates %}
-**{{ item.name }}** <span class="pull-right">{{ item.date }}</span>
 {% endfor %}
 
 ## Skills
@@ -95,11 +96,11 @@ title: CV
 {% endif %}
 {% endfor %}
 
-## Affiliations
+## Certificates
 <hr>
 
-{% for item in affiliations %}
-**{{ item.organization }}** <span class="pull-right">{{ item.title }}, {{ item.dates }}</span>
-<br />
+{% for item in certificates %}
+**{{ item.name }}** <span class="pull-right">{{ item.date }}</span>
 {% endfor %}
+
 </div>

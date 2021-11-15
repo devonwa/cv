@@ -25,8 +25,7 @@
 % Info
 \begin{center}
     {\LARGE\textbf{<< info.name >>}} \\
-    << info.email >> $\diamond$ << info.phone >> $\diamond$ << info.location >> \\
-    << info.site >> $\diamond$ << info.linkedin >> \vspace{0.25\baselineskip} \hrule
+    << info.email >> $\diamond$ << info.phone >> $\diamond$ << info.location >>  \vspace{0.25\baselineskip} \hrule
 \end{center}
 
 \vspace{0.5\baselineskip}\noindent
@@ -34,16 +33,31 @@
 \begin{tabular}[t]{@{}p{1.05in} @{}p{6.00in}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{Education}
-<<* for item in education *>>
+{Industry}
+<<* for item in industry *>>
 &
-\textbf{<< item.school >>} \hfill << item.date >> \vspace{0.015in} \\ &
-<< item.degree >> (GPA: << item.gpa >>)\vspace{0.015in}
+\textbf{<< item.company >>}  \hfill << item.location >>\vspace{0.015in} \\ &
+<<* for position in item.positions *>>
+<< position.title >> \hfill << position.dates >>\vspace{0.015in}
+<<* if not loop.last *>>
+        \\ &
+<<* endif *>>
+<<* endfor *>>
 <<* if item.details *>>
 \begin{itemize}
     \renewcommand{\labelitemi}{$\diamond$}
 <<* for detail in item.details *>>
-    \item << detail >>
+<<* if detail is string *>>
+    \item << detail >>%
+<<* else *>>
+    \begin{itemize}
+    \renewcommand{\labelitemii}{$\cdot$}
+<<* for subdetail in detail *>>
+        \item << subdetail >>%
+<<* endfor *>>
+    \end{itemize}
+    \vspace{0.5\baselineskip}
+<<* endif *>>
 <<* endfor *>>
 \end{itemize}
 <<* else *>>
@@ -77,26 +91,16 @@
 \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{Industry}
-<<* for item in industry *>>
+{Education}
+<<* for item in education *>>
 &
-\textbf{<< item.company >>}  \hfill << item.location >>\vspace{0.015in} \\ &
-<< item.title >> \hfill << item.dates >>\vspace{0.015in}
+\textbf{<< item.school >>} \hfill << item.date >> \vspace{0.015in} \\ &
+<< item.degree >> << item.gpa >>. \vspace{0.015in}
 <<* if item.details *>>
 \begin{itemize}
     \renewcommand{\labelitemi}{$\diamond$}
 <<* for detail in item.details *>>
-<<* if detail is string *>>
-    \item << detail >>%
-<<* else *>>
-    \begin{itemize}
-    \renewcommand{\labelitemii}{$\cdot$}
-<<* for subdetail in detail *>>
-        \item << subdetail >>%
-<<* endfor *>>
-    \end{itemize}
-    \vspace{0.5\baselineskip}
-<<* endif *>>
+    \item << detail >>
 <<* endfor *>>
 \end{itemize}
 <<* else *>>
@@ -111,16 +115,6 @@
 <<* for item in skills *>>
 &
 \textbf{<< item.type >>:} << item.details >>%
-\vspace{0.5\baselineskip}
-\\
-<<* endfor *>>
-\\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{Certificates}
-<<* for item in certificates *>>
-&
-\textbf{<< item.name >>} \hfill << item.date >>%
 \vspace{0.5\baselineskip}
 \\
 <<* endfor *>>

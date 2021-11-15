@@ -5,6 +5,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 
 from jinja2 import Environment, FileSystemLoader
 import yaml
@@ -26,6 +27,7 @@ build_pdf = True
 
 def generate_all():
     """Render all templates in the template directory."""
+
     for f in os.listdir(TEMPLATES_DIR):
         if os.path.isdir(os.path.join(TEMPLATES_DIR, f)):
             continue
@@ -91,5 +93,5 @@ def main():
     generate_all()
 
 
-#if __name__ == "__main__":
-main()
+if __name__ == "__main__":
+    main()

@@ -38,7 +38,9 @@ Industry
 
 <<* for item in industry *>>
 << item.company >> -- << item.location >>
-<< item.title >> -- << item.dates >>
+<<* for position in item.positions *>>
+<< position.title >> -- << position.dates >>
+<<* endfor *>>
 <<* if item.details *>>
 <<* for detail in item.details *>>
 <<* if detail is string *>>

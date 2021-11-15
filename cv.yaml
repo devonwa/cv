@@ -5,51 +5,50 @@ info:
   email: devon@devonwa.com
   site: devonwa.com
   linkedin: linkedin.com/in/devonwalker
-  location: Pittsburgh, PA
+  location: Austin, TX, USA
 
 
 education:
   - school: Carnegie Mellon University
-    degree: Master of Science in Chemical Engineering
+    degree: Master of Science in Chemical Engineering.
     gpa: 4.0/4.0
     date: December 2016
 
   - school: University of Pittsburgh
-    degree: Bachelor of Science in Chemical Engineering
+    degree: Bachelor of Science in Chemical Engineering. Minor in Computer Science.
     gpa: 3.3/4.0
     date: April 2012
-    details:
-      - Minor in Computer Science
 
   #- school: Cedar Crest High School (Lebanon, PA)
   #  date: April 2008
 
 
-research:
-  - name: Carnegie Mellon University
-    location: Pittsburgh, PA
-    title: "Master's Thesis, Advisor: Prof. John Kitchin"
-    dates: January 2015 -- December 2016
-    project:
-      - title: "Title: A neural network potential for nanoporous graphene."
-        details:
-          - Performed \textit{ab initio} molecular simulations on a stochastic sampling of nanopores in graphene in order to train a neural network potential suitable for dynamic simulations.
-          - Code for simulations and neural network training were written in Python and executed in parallel on a Linux-based distributed computing cluster.
-          # - Performed \textit{ab initio} calculations using DFT with VASP on algorithmically generated graphene defect structures.
-          # - Developed neural networks to use as potentials in MD simulations with the accuracy of DFT and a computational cost similar to physical potentials.
-
-
 industry:
-  - company: EZSoft, Inc.
-    location: Malvern, PA
-    title: Automation Engineer
-    dates: October 2012 -- July 2015
+  - company: Tesla, Inc.
+    location: Austin, TX, USA
+    positions:
+      - title: Staff Automation Controls Engineer
+        dates: December 2019 -- Present
+      - title: Senior Automation Controls Engineer
+        dates: April 2018 -- December 2019
+      - title: Automation Controls Engineer
+        dates: May 2017 -- April 2018
     details:
-      - Deployed to provide on-site support for the research and development group within a major pharmaceutical company.
+      - Created custom Tool Positioning System that uses a collection of disparate sensors to govern tool interlock conditions. Integrated into Shanghai Drive Unit (approx. 25 stations).
+      - Redesigned Siemens PLC MES transaction library to abstract changing backend data acquisition strategies from machine process implementations.
+      - Led a team of 9 controls engineers to deliver the first Tesla Paint Shop in Shanghai.
+      
+  - company: EZSoft, Inc.
+    location: Malvern, PA, USA
+    positions:
+      - title: Automation Controls Engineer
+        dates: October 2012 -- July 2015
+    details:
+      - Provided on-site support for the R\&D group at a major pharmaceutical company.
       -
-        - Managed three projects for integrating new technologies into a prototype process.
-        - Recorded experiment data into a SQL database and used statistical analysis to develop further experiments and deliver presentations to superiors for project funding.
-      - Developed the operator interface for a bakery with over twelve hundred I/O points spanning three synchronous Allen-Bradley PLCs.
+        - Wrote a custom C\# communication interface and GUI to integrate lab test equipment into an Allen-Bradley control system.
+        - Recorded high-speed data into an SQL database and performed statistical analysis to inform future experiment plans.
+      #- Developed the operator interface for a bakery with over twelve hundred I/O points spanning three synchronous Allen-Bradley PLCs.
 
   # - company: Classic Industries
   #   location: Latrobe, PA
@@ -59,26 +58,42 @@ industry:
   #     - Documented polymer mold qualifications for a merger of two production plants.
 
   - company: US Liner Company
-    location: Cranberry Twp, PA
-    title: Research Engineer Internship
-    dates: January 2012 -- May 2012
+    location: Cranberry Twp, PA, USA
+    positions:
+      - title: Research Engineer Internship
+        dates: January 2012 -- May 2012
     details:
-      - Furthered product development by testing polymer materials using ASTM standards.
+      #- Furthered product development by testing polymer materials using ASTM standards.
       # - Tested polymer products against ASTM standards with an Instron machine to determine the best material candidates for product development efforts.
       # - Prepared research summary reports for superiors to compare the best candidates for materials and processes.
 
   - company: Chemical Engr. Dept., University of Pittsburgh
-    location: Pittsburgh, PA
-    title: Process Control Engineer Internship
-    dates: May 2011 -- December 2011
+    location: Pittsburgh, PA, USA
+    positions:
+      - title: Process Control Engineer Internship
+        dates: May 2011 -- December 2011
     details: 
-      - Developed the LabView control systems for seven laboratory experiments used by all students taking the senior chemical engineering lab.
+      - Rewrote LabView control systems for 6 chemical engineering lab experiments.
       #- Modeled a double-pipe heat exchanger experiment using first principles in Simulink and wrote the lab manual for student use.
 
   #- company: The Cartilage Restoration Center, UPMC
   #  location: Pittsburgh, PA
   #  title: Website Developer Internship
   #  dates: August 2010 -- April 2011
+
+
+research:
+  - name: Carnegie Mellon University
+    location: Pittsburgh, PA, USA
+    title: "Master's Thesis, Advisor: Prof. John Kitchin"
+    dates: January 2015 -- December 2016
+    project:
+      - title: "Title: A neural network potential for nanoporous graphene."
+        details:
+          - Performed molecular simulations on nanoporous graphene to train a feedforward neural network capable of replicating a Density Functional Theory exchange potential.
+          # - Python code for simulations and neural network training were executed in parallel on a Linux-based cluster.
+          # - Performed \textit{ab initio} calculations using DFT with VASP on algorithmically generated graphene defect structures.
+          # - Developed neural networks to use as potentials in MD simulations with the accuracy of DFT and a computational cost similar to physical potentials.
 
 
 presentations:
@@ -98,13 +113,13 @@ presentations:
 
 skills:
   - type: Expertise
-    details: Mathematical Modeling and Simulation, Statistical Data Analysis, Object Oriented Programming, Machine Learning, Optimization, Unix/Linux Environments.
+    details: Proficient in Object Oriented Programming, Networking and Communication of Factory Controls Systems, Process Modeling and Optimization. Familiar with Machine Learning, Front-end Browser Development.
     
   - type: Software
-    details:  COMSOL, ASPEN Plus, Microsoft Office, RSLogix, FactoryTalk View, SQL Server, SciPy, Git, Google Apps, Virtual Machines.
+    details: Proficient in UNIX, Git, MySQL, Ansible, Jenkins, JIRA, Confluence, Ignition, Siemens TIA, Rockwell Studio. Familiar with Kubernetes, Docker, Kafka, React.
 
-  - type: Programming languages
-    details: Proficient in C\#, Python, Java, MATLAB, PLC Ladder Logic, LabView, HTML, CSS, LaTeX. Familiar with C{}\verb!++!, SQL, Go, VBA.
+  - type: Programming Languages
+    details: Proficient in Python, Golang, SQL, C\#, Java, MATLAB, LabView, HTML, CSS, \LaTeX. Familiar with JavaScript, C{}\verb!++!, VBA.
 
   #- type: Expertise
   #  details: Simulation, Machine Learning, Process Modeling, Cross-disciplinary Design, Process Optimization
