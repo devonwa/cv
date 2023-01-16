@@ -6,7 +6,7 @@ Write a CV in YAML and export it using a Jinja2 template.
 - Python 3
 - LaTeX
 - [[http://pyyaml.org/wiki/PyYAML][PyYAML]] ~pip install PyYAML~
-- [[https://jinja2docs.readthedocs.io/en/stable/][Jinja2]] ~pip install PyYAML~
+- [[https://jinja.palletsprojects.com/en/3.1.x/intro/#installation][Jinja2]] ~pip install Jinja2~
 
 ** Use
 Run ~python cv.py~ to generate all templates in the template folder using ~cv.yaml~.
