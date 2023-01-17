@@ -4,12 +4,21 @@
 \usepackage{bold-extra}
 \usepackage{comment} % see texblog.org/2007/12/31/commenting-in-latex/ for a cool use.
 \usepackage{enumitem}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref} % links without teal boxes
+\usepackage{tabularx}
 \usepackage{microtype} % always use after fonts, if any
 \usepackage[margin=0.75in]{geometry} % Margins
 
+\renewcommand{\familydefault}{\sfdefault} % use sans serif font
+\usepackage[T1]{fontenc}
+% \usepackage{charter} % most readable serif
+\usepackage{helvet} % computer modern (default (no package)) is second best
+
 % Itemize list padding
 \setlist{nosep, after=\vspace{-0.5\baselineskip}, leftmargin=*}
+
+\input{glyphtounicode}
+\pdfgentounicode=1
 
 \begin{document}
 
@@ -21,46 +30,32 @@
 \thispagestyle{empty}
 \pagestyle{empty}
 
+\renewcommand{\arraystretch}{1}%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Info
-\begin{center}
-    {\LARGE\textbf{<< info.name >>}} \\
-    << info.email >> $\diamond$ << info.phone >> $\diamond$ << info.location >>  \vspace{0.25\baselineskip} \hrule
-\end{center}
+\noindent
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+  \huge << info.name >> & {
+    \begin{tabular}{r@{}}
+        \href{<< info.email >>}{<< info.email >>} | << info.phone >> | << info.location >>\\
+        \href{http://<< info.site >>}{<< info.site >>} | \href{http://<< info.linkedin >>}{<< info.linkedin >>} | \href{http://<< info.github >>}{<< info.github >>} \\
+    \end{tabular}
+  }\\
+\end{tabularx}
+\hrule
 
-\vspace{0.5\baselineskip}\noindent
-\renewcommand{\arraystretch}{1}%
+\vspace{0.5\baselineskip}
+
+\noindent
 \begin{tabular}[t]{@{}p{1.05in} @{}p{6.00in}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{Industry}
-<<* for item in industry *>>
+{Skills}
+<<* for item in skills *>>
 &
-\textbf{<< item.company >>}  \hfill << item.location >>\vspace{0.015in} \\ &
-<<* for position in item.positions *>>
-<< position.title >> \hfill << position.dates >>\vspace{0.015in}
+\textbf{<< item.type >>:} << item.details >>%
 <<* if not loop.last *>>
-        \\ &
-<<* endif *>>
-<<* endfor *>>
-<<* if item.details *>>
-\begin{itemize}
-    \renewcommand{\labelitemi}{$\diamond$}
-<<* for detail in item.details *>>
-<<* if detail is string *>>
-    \item << detail >>%
-<<* else *>>
-    \begin{itemize}
-    \renewcommand{\labelitemii}{$\cdot$}
-<<* for subdetail in detail *>>
-        \item << subdetail >>%
-<<* endfor *>>
-    \end{itemize}
-    \vspace{0.5\baselineskip}
-<<* endif *>>
-<<* endfor *>>
-\end{itemize}
-<<* else *>>
 \vspace{0.5\baselineskip}
 <<* endif *>>
 \\
@@ -68,34 +63,69 @@
 \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{Research}
-<<* for item in research *>>
+{Experience}
+<<* for item in industry *>>
 &
-\textbf{<< item.name >>}  \hfill << item.location >>\vspace{0.015in} \\ &
-<< item.title >> \hfill << item.dates >>\vspace{0.015in} \\ &
-<<* for p in item.project *>>
-<< p.title >> \vspace{0.015in}
-    <<* if p.details *>>
-    \begin{itemize}
-        \renewcommand{\labelitemi}{$\diamond$}
-        <<* for detail in p.details *>>
-        \item << detail >>%
-        <<* endfor *>>
-    \end{itemize}
-    <<* else *>>
-    \vspace{0.5\baselineskip}
-    <<* endif *>>
-<<* endfor *>>
+\textbf{<< item.company >>}  \hfill << item.location >>\vspace{0.015in} \\ &
+<<* for position in item.positions *>> 
+    \textit{<< position.title >> \hfill << position.dates >>}
+    <<* if position.details *>>
+        \begin{itemize}[noitemsep,topsep=0pt]
+        % \renewcommand{\labelitemi}{$\diamond$} % change bullets to diamonds
+        <<* for detail in position.details *>>
+            <<* if detail is string *>>
+                \item << detail >>%
+            <<* else *>>
+                \begin{itemize}
+                \renewcommand{\labelitemii}{$\cdot$}
+            <<* for subdetail in detail *>>
+                    \item << subdetail >>%
+            <<* endfor *>> % for subdetail
+                \end{itemize}
+                \vspace{0.5\baselineskip}
+            <<* endif *>> % if detail is string
+        <<* endfor *>> % for detail
+        \end{itemize}
+    <<* else *>> % if item.details
+        % \vspace{0.5\baselineskip}
+    <<* endif *>> % if item.details
+<<* if not loop.last *>>
+\\ &
+<<* endif *>>
+<<* endfor *>> % for position
 \\
 <<* endfor *>>
 \\
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% {Research}
+% <<* for item in research *>>
+% &
+% \textbf{<< item.name >>}  \hfill << item.location >>\vspace{0.015in} \\ &
+% << item.title >> \hfill << item.dates >>\vspace{0.015in} \\ &
+% <<* for p in item.project *>>
+% << p.title >> \vspace{0.015in}
+%     <<* if p.details *>>
+%     \begin{itemize}
+%         \renewcommand{\labelitemi}{$\diamond$}
+%         <<* for detail in p.details *>>
+%         \item << detail >>%
+%         <<* endfor *>>
+%     \end{itemize}
+%     <<* else *>>
+%     \vspace{0.5\baselineskip}
+%     <<* endif *>>
+% <<* endfor *>>
+% \\
+% <<* endfor *>>
+% \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {Education}
 <<* for item in education *>>
 &
 \textbf{<< item.school >>} \hfill << item.date >> \vspace{0.015in} \\ &
-<< item.degree >> << item.gpa >>. \vspace{0.015in}
+<< item.degree >> | << item.gpa >> \vspace{0.015in}
 <<* if item.details *>>
 \begin{itemize}
     \renewcommand{\labelitemi}{$\diamond$}
@@ -106,16 +136,6 @@
 <<* else *>>
 \vspace{0.5\baselineskip}
 <<* endif *>>
-\\
-<<* endfor *>>
-\\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{Skills}
-<<* for item in skills *>>
-&
-\textbf{<< item.type >>:} << item.details >>%
-\vspace{0.5\baselineskip}
 \\
 <<* endfor *>>
 \\
