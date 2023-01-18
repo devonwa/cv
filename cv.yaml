@@ -30,6 +30,30 @@ skills:
   #  details: Simulation, Machine Learning, Process Modeling, Cross-disciplinary Design, Process Optimization
 
 
+Topics:
+Data Modeling
+Data Visualization
+Oberservability
+Leadership
+Distributed Systems
+Optimization
+Event-driven Design
+
+Projects:
+station controller bt1 promotion
+tester statuses
+fx complete step preview api
+open telemetry tracing
+ion relay architecture
+hawkeye
+
+station controller tps
+pallet-record redesign
+fx api calls from plc
+lead paint team
+lead du shops (global)
+
+
 industry:
   - company: Tesla, Inc.
     location: Austin, TX
@@ -38,7 +62,11 @@ industry:
         dates: December 2021 -- Present
         details:
           - topic: 
-            summary: Wrote a Tool Positioning System in Golang to
+            summary: 
+          - topic: 
+            summary: 
+          - topic: 
+            summary: 
       - title: Staff Automation Engineer
         dates: December 2019 -- December 2021
       - title: Senior Automation Engineer
@@ -51,7 +79,9 @@ industry:
           - topic: 
             summary: Redesigned Siemens PLC MES transaction library to abstract changing backend data acquisition strategies from machine process implementations.
           - topic: 
-            summary: Led a team of 9 controls engineers to deliver the first Tesla Paint Shop in Shanghai.
+            summary: Redesigned Siemens PLC MES transaction library to abstract changing backend data acquisition strategies from machine process implementations.
+          - topic: Leadership
+            summary: Led a team of 9 controls engineers to deliver Tesla's first international Paint Shop in Shanghai.
       
   - company: EZSoft, Inc.
     location: Malvern, PA
@@ -61,10 +91,11 @@ industry:
         details:
           # - topic: 
           #   summary: Provided on-site support for the R\&D group at a major pharmaceutical company.
-          - topic: 
-            summary: Wrote a custom C\# communication interface and GUI to integrate lab test equipment into an Allen-Bradley control system.
-          - topic: 
-            summary: Recorded high-speed data into an SQL database and performed statistical analysis to inform future experiment plans.
+          - topic: Embedded Devices
+            summary: Developed a C\# program and GUI to integrate embedded systems into an industrial control system.
+            #summary: Wrote a custom C\# communication interface and GUI to integrate lab test equipment into an Allen-Bradley control system.
+          - topic: Data Acquisition
+            summary: Recorded high-speed data into a SQL Server database and performed statistical analysis to inform process efficiency.
           # - topic: 
           #   summary: Developed the operator interface for a bakery with over twelve hundred I/O points spanning three synchronous Allen-Bradley PLCs.
 
