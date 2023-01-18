@@ -9,10 +9,10 @@
 \usepackage{microtype} % always use after fonts, if any
 \usepackage[margin=0.75in]{geometry} % Margins
 
-\renewcommand{\familydefault}{\sfdefault} % use sans serif font
+% \renewcommand{\familydefault}{\sfdefault} % use sans serif font
 \usepackage[T1]{fontenc}
 % \usepackage{charter} % most readable serif
-\usepackage{helvet} % computer modern (default (no package)) is second best
+% \usepackage{helvet} % computer modern (default (no package)) is second best
 
 % Itemize list padding
 \setlist{nosep, after=\vspace{-0.5\baselineskip}, leftmargin=*}
@@ -31,6 +31,7 @@
 \pagestyle{empty}
 
 \renewcommand{\arraystretch}{1}%
+% \renewcommand{\labelitemi}{$\diamond$} % change bullets to diamonds
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Info
@@ -45,7 +46,7 @@
 \end{tabularx}
 \hrule
 
-\vspace{0.5\baselineskip}
+\vspace{0.7\baselineskip}
 
 \noindent
 \begin{tabular}[t]{@{}p{1.05in} @{}p{6.00in}}
@@ -56,7 +57,7 @@
 &
 \textbf{<< item.type >>:} << item.details >>%
 <<* if not loop.last *>>
-\vspace{0.5\baselineskip}
+% \vspace{0.2\baselineskip} % add a little space between lists
 <<* endif *>>
 \\
 <<* endfor *>>
@@ -71,19 +72,8 @@
     \textit{<< position.title >> \hfill << position.dates >>}
     <<* if position.details *>>
         \begin{itemize}[noitemsep,topsep=0pt]
-        % \renewcommand{\labelitemi}{$\diamond$} % change bullets to diamonds
         <<* for detail in position.details *>>
-            <<* if detail is string *>>
-                \item << detail >>%
-            <<* else *>>
-                \begin{itemize}
-                \renewcommand{\labelitemii}{$\cdot$}
-            <<* for subdetail in detail *>>
-                    \item << subdetail >>%
-            <<* endfor *>> % for subdetail
-                \end{itemize}
-                \vspace{0.5\baselineskip}
-            <<* endif *>> % if detail is string
+            \item \textbf{<< detail.topic >>}: << detail.summary >>%
         <<* endfor *>> % for detail
         \end{itemize}
     <<* else *>> % if item.details
@@ -107,7 +97,6 @@
 % << p.title >> \vspace{0.015in}
 %     <<* if p.details *>>
 %     \begin{itemize}
-%         \renewcommand{\labelitemi}{$\diamond$}
 %         <<* for detail in p.details *>>
 %         \item << detail >>%
 %         <<* endfor *>>
@@ -125,12 +114,11 @@
 <<* for item in education *>>
 &
 \textbf{<< item.school >>} \hfill << item.date >> \vspace{0.015in} \\ &
-<< item.degree >> | << item.gpa >> \vspace{0.015in}
+<< item.degree >>. << item.gpa >>. \vspace{0.015in}
 <<* if item.details *>>
 \begin{itemize}
-    \renewcommand{\labelitemi}{$\diamond$}
 <<* for detail in item.details *>>
-    \item << detail >>
+    \item \textbf{<< detail.topic >>}: << detail.summary >>
 <<* endfor *>>
 \end{itemize}
 <<* else *>>

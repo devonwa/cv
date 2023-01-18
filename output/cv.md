@@ -27,18 +27,18 @@ title: CV
 ## Industry
 <hr>
 
-**Tesla, Inc.** <span class="pull-right">Austin, TX, USA</span><br />
+**Tesla, Inc.** <span class="pull-right">Austin, TX</span><br />
 Staff Software Engineer <span class="pull-right">December 2021 -- Present</span><br />
 Staff Automation Engineer <span class="pull-right">December 2019 -- December 2021</span><br />
 Senior Automation Engineer <span class="pull-right">April 2018 -- December 2019</span><br />
 Automation Engineer <span class="pull-right">May 2017 -- April 2018</span><br />
 
 <br />
-**EZSoft, Inc.** <span class="pull-right">Malvern, PA, USA</span><br />
+**EZSoft, Inc.** <span class="pull-right">Malvern, PA</span><br />
 Automation Engineer <span class="pull-right">October 2012 -- July 2015</span><br />
 
 <br />
-**Chemical Engr. Dept., University of Pittsburgh** <span class="pull-right">Pittsburgh, PA, USA</span><br />
+**Chemical Engr. Dept., University of Pittsburgh** <span class="pull-right">Pittsburgh, PA</span><br />
 Process Control Engineer Internship <span class="pull-right">May 2011 -- December 2011</span><br />
 
 
@@ -52,19 +52,26 @@ Process Control Engineer Internship <span class="pull-right">May 2011 -- Decembe
 **Carnegie Mellon University** <span class="pull-right">December 2016</span><br />
 Master of Science in Chemical Engineering 4.0/4.0.<br />
 
+* {'topic': 'Machine Learning', 'summary': 'Thesis on "A neural network potential for nanoporous graphene."'}
 <br />
 **University of Pittsburgh** <span class="pull-right">April 2012</span><br />
-Bachelor of Science in Chemical Engineering | Minor in Computer Science 3.3/4.0.<br />
+Bachelor of Science in Chemical Engineering. Minor in Computer Science 3.3/4.0.<br />
 
 <br />
 
 ## Skills
 <hr>
 
-**Programming Languages:** Proficient in Golang, JavaScript, TypeScript, Python, SQL, C\#, Java, HTML/CSS. Familiar with C\verb!++!, LabView.
+**Programming:** Golang, JavaScript, TypeScript, Python, SQL, Make, C\#, Java, HTML/CSS
 <br />
 <br />
-**Technologies:** Kubernetes, Docker, Kafka, React.js, UNIX, Git, MySQL, Ansible, Jenkins, JIRA, PLC Platforms.
+**Frameworks:** React.js, Playwright, Gorilla (REST), SciPy
+<br />
+<br />
+**Databases:** MySQL, Kafka, Prometheus, Redis, FoundationDB, BoltDB
+<br />
+<br />
+**Tools:** Linux, Git, Kubernetes, Docker, Ansible, Vault, Github, Graphana, Splunk, Vim
 <br />
 
 ## Certificates

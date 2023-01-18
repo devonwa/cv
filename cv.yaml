@@ -6,32 +6,39 @@ info:
   site: devonwa.com
   linkedin: linkedin.com/in/devonwalker
   github: github.com/devonwa
-  location: Austin, TX, USA
+  location: Austin, TX
 
 
-education:
-  - school: Carnegie Mellon University
-    degree: Master of Science in Chemical Engineering
-    gpa: 4.0/4.0
-    date: December 2016
+skills:
+  - type: Programming
+    details: Golang, JavaScript, TypeScript, Python, SQL, Make, C\#, Java, HTML/CSS
 
-  - school: University of Pittsburgh
-    degree: Bachelor of Science in Chemical Engineering | Minor in Computer Science
-    gpa: 3.3/4.0
-    date: April 2012
+  - type: Frameworks
+    details:  React.js, Playwright, Gorilla (REST), SciPy
 
-  #- school: Cedar Crest High School (Lebanon, PA)
-  #  date: April 2008
+  - type: Databases
+    details:  MySQL, Kafka, Prometheus, Redis, FoundationDB, BoltDB
+
+  - type: Tools
+    details: Linux, Git, Kubernetes, Docker, Ansible, Vault, Github, Graphana, Splunk, Vim
+    # Jenkins, Helm, Open Telemetry, Storybook
+
+  # - type: Expertise
+  #   details: Proficient in Object Oriented Programming, Networking and Communication of Factory Controls Systems, Process Modeling and Optimization. Familiar with Machine Learning, Front-end Browser Development.
+    
+  #- type: Expertise
+  #  details: Simulation, Machine Learning, Process Modeling, Cross-disciplinary Design, Process Optimization
 
 
 industry:
   - company: Tesla, Inc.
-    location: Austin, TX, USA
+    location: Austin, TX
     positions:
       - title: Staff Software Engineer
         dates: December 2021 -- Present
         details:
-          - Wrote a Tool Positioning System in Golang to
+          - topic: 
+            summary: Wrote a Tool Positioning System in Golang to
       - title: Staff Automation Engineer
         dates: December 2019 -- December 2021
       - title: Senior Automation Engineer
@@ -39,31 +46,38 @@ industry:
       - title: Automation Engineer
         dates: May 2017 -- April 2018
         details:
-          - Created custom Tool Positioning System that uses a collection of disparate sensors to govern tool interlock conditions. Integrated into Shanghai Drive Unit (approx. 25 stations).
-          - Redesigned Siemens PLC MES transaction library to abstract changing backend data acquisition strategies from machine process implementations.
-          - Led a team of 9 controls engineers to deliver the first Tesla Paint Shop in Shanghai.
+          - topic: 
+            summary: Created custom Tool Positioning System that uses a collection of disparate sensors to govern tool interlock conditions. Integrated into Shanghai Drive Unit (approx. 25 stations).
+          - topic: 
+            summary: Redesigned Siemens PLC MES transaction library to abstract changing backend data acquisition strategies from machine process implementations.
+          - topic: 
+            summary: Led a team of 9 controls engineers to deliver the first Tesla Paint Shop in Shanghai.
       
   - company: EZSoft, Inc.
-    location: Malvern, PA, USA
+    location: Malvern, PA
     positions:
       - title: Automation Engineer
         dates: October 2012 -- July 2015
         details:
-          # - Provided on-site support for the R\&D group at a major pharmaceutical company.
-          # -
-          - Wrote a custom C\# communication interface and GUI to integrate lab test equipment into an Allen-Bradley control system.
-          - Recorded high-speed data into an SQL database and performed statistical analysis to inform future experiment plans.
-          #- Developed the operator interface for a bakery with over twelve hundred I/O points spanning three synchronous Allen-Bradley PLCs.
+          # - topic: 
+          #   summary: Provided on-site support for the R\&D group at a major pharmaceutical company.
+          - topic: 
+            summary: Wrote a custom C\# communication interface and GUI to integrate lab test equipment into an Allen-Bradley control system.
+          - topic: 
+            summary: Recorded high-speed data into an SQL database and performed statistical analysis to inform future experiment plans.
+          # - topic: 
+          #   summary: Developed the operator interface for a bakery with over twelve hundred I/O points spanning three synchronous Allen-Bradley PLCs.
 
   # - company: Classic Industries
   #   location: Latrobe, PA
   #   title: Quality Engineer (Contract position)
   #   dates: August 2012 -- September 2012
   #   details:
-  #     - Documented polymer mold qualifications for a merger of two production plants.
+      #  - topic: 
+      #    summary: Documented polymer mold qualifications for a merger of two production plants.
 
   # - company: US Liner Company
-  #   location: Cranberry Twp, PA, USA
+  #   location: Cranberry Twp, PA
   #   positions:
   #     - title: Research Engineer Internship
   #       dates: January 2012 -- May 2012
@@ -73,7 +87,7 @@ industry:
           # - Prepared research summary reports for superiors to compare the best candidates for materials and processes.
 
   - company: Chemical Engr. Dept., University of Pittsburgh
-    location: Pittsburgh, PA, USA
+    location: Pittsburgh, PA
     positions:
       - title: Process Control Engineer Internship
         dates: May 2011 -- December 2011
@@ -87,9 +101,27 @@ industry:
   #  dates: August 2010 -- April 2011
 
 
+education:
+  - school: Carnegie Mellon University
+    degree: Master of Science in Chemical Engineering
+    gpa: 4.0/4.0
+    date: December 2016
+    details:
+      - topic: Machine Learning
+        summary: "Thesis on \"A neural network potential for nanoporous graphene.\""
+
+  - school: University of Pittsburgh
+    degree: Bachelor of Science in Chemical Engineering. Minor in Computer Science
+    gpa: 3.3/4.0
+    date: April 2012
+
+  #- school: Cedar Crest High School (Lebanon, PA)
+  #  date: April 2008
+
+
 # research:
 #   - name: Carnegie Mellon University
-#     location: Pittsburgh, PA, USA
+#     location: Pittsburgh, PA
 #     title: "Master's Thesis, Advisor: Prof. John Kitchin"
 #     dates: January 2015 -- December 2016
 #     project:
@@ -114,20 +146,6 @@ industry:
 #  - venue: 2016 ChEGsa Symposium
 #  - location: Carnegie Mellon University, Pittsburgh, PA
 #  - url: https://doi.org/10.5281/zenodo.188625
-
-
-skills:
-  - type: Programming Languages
-    details: Proficient in Golang, JavaScript, TypeScript, Python, SQL, C\#, Java, HTML/CSS. Familiar with C\verb!++!, LabView.
-
-  - type: Technologies
-    details: Kubernetes, Docker, Kafka, React.js, UNIX, Git, MySQL, Ansible, Jenkins, JIRA, PLC Platforms.
-
-  # - type: Expertise
-  #   details: Proficient in Object Oriented Programming, Networking and Communication of Factory Controls Systems, Process Modeling and Optimization. Familiar with Machine Learning, Front-end Browser Development.
-    
-  #- type: Expertise
-  #  details: Simulation, Machine Learning, Process Modeling, Cross-disciplinary Design, Process Optimization
 
 
 certificates:
