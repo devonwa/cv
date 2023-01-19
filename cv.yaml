@@ -59,9 +59,11 @@ industry:
         dates: December 2021 -- Present
         details:
           - topic: Data Visualization
-            summary: Developed an interactive inventory visualization application with React.js, d3, svgs, and Golang Fiber that allowed Operations to identify physical inventory discrepancies in real-time.
+            summary: Developed an interactive inventory visualization application with React.js, d3 with SVGs, and Golang Fiber that allowed Operations to identify physical inventory discrepancies in real-time.
           - topic: Observability
             summary: Implemented Open Telemetry tracing across several Golang applications communicating via gRPC and Kafka, greatly reducing fault root cause analysis time.
+          - topic: Human Machine Interface
+            summary: Developed a tool positioning system in Golang to enable a production worker's torque tool only when the tool is in the correct physical position, as detected by laser and proximity sensors communicating via ModbusTCP.
           - topic: API Design
             summary: Created REST APIs using gorilla/mux to enable complex quality data interactions between industrial scanners, lineside systems, and MES systems.
           - topic: Serial Protocols
@@ -74,7 +76,7 @@ industry:
         dates: May 2017 -- April 2018
         details:
           - topic: Leadership
-            summary: Led a team of 7 automation engineers managing 6 foreign suppliers to deliver the Vehicle Paint Shop (~\$20M+) for the company's first international factory in Shanghai.
+            summary: Led a team of 7 automation engineers managing 6 foreign suppliers to deliver the control system of the Vehicle Paint Shop (~\$20M+) for the company's first international factory in Shanghai.
           - topic: Design Architect
             summary: Drafted an electrical and network architecture specification and managed its execution by 8 automation engineers leading 14 suppliers of Drive Unit equipment (~\$100M\verb!+!) to three factories on three continents.
           - topic: Abstraction
@@ -136,7 +138,7 @@ education:
     date: December 2016
     details:
       - topic: Machine Learning
-        summary: 'Thesis on "A neural network potential for nanoporous graphene."'
+        summary: 'Thesis on "A neural network potential for nanoporous graphene." Performed molecular simulations on nanoporous graphene to train a feedforward neural network capable of replicating a Density Functional Theory exchange potential.'
 
   - school: University of Pittsburgh
     degree: Bachelor of Science in Chemical Engineering. Minor in Computer Science
