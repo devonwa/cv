@@ -14,10 +14,10 @@ skills:
     details: Golang, JavaScript, TypeScript, Python, SQL, Make, C\#, Java, HTML/CSS
 
   - type: Frameworks
-    details:  React.js, Playwright, Gorilla (REST), SciPy
+    details: React.js, Playwright, Gorilla (REST), SciPy
 
   - type: Databases
-    details:  MySQL, Kafka, Prometheus, Redis, FoundationDB, BoltDB
+    details: MySQL, Kafka, Prometheus, Redis, FoundationDB, BoltDB
 
   - type: Tools
     details: Linux, Git, Kubernetes, Docker, Ansible, Vault, Github, Graphana, Splunk, Vim
@@ -30,28 +30,28 @@ skills:
   #  details: Simulation, Machine Learning, Process Modeling, Cross-disciplinary Design, Process Optimization
 
 
-Topics:
-Data Modeling
-Data Visualization
-Oberservability
-Leadership
-Distributed Systems
-Optimization
-Event-driven Design
+# Topics:
+# Data Modeling
+# Data Visualization
+# Oberservability
+# Leadership
+# Distributed Systems
+# Optimization
+# Event-driven Design
 
-Projects:
-station controller bt1 promotion
-tester statuses
-fx complete step preview api
-open telemetry tracing
-ion relay architecture
-hawkeye
+# Projects:
+# station controller bt1 promotion
+# tester statuses
+# fx complete step preview api
+# open telemetry tracing
+# ion relay architecture
+# hawkeye
 
-station controller tps
-pallet-record redesign
-fx api calls from plc
-lead paint team
-lead du shops (global)
+# station controller tps
+# pallet-record redesign
+# fx api calls from plc
+# lead paint team
+# lead du shops (global)
 
 
 industry:
@@ -61,12 +61,12 @@ industry:
       - title: Staff Software Engineer
         dates: December 2021 -- Present
         details:
-          - topic: 
-            summary: 
-          - topic: 
-            summary: 
-          - topic: 
-            summary: 
+          - topic: Data Visualization
+            summary: Developed an interactive inventory visualization single-page application with React.js, d3, and Golang Fiber that identified discrepancies in real-time.
+          - topic: Observability
+            summary: Implemented Open Telemetry tracing across several Golang applications communicating via gRPC and Kafka, greatly reducing failure analysis time.
+          - topic: a
+            summary: a
       - title: Staff Automation Engineer
         dates: December 2019 -- December 2021
       - title: Senior Automation Engineer
@@ -74,14 +74,12 @@ industry:
       - title: Automation Engineer
         dates: May 2017 -- April 2018
         details:
-          - topic: 
-            summary: Created custom Tool Positioning System that uses a collection of disparate sensors to govern tool interlock conditions. Integrated into Shanghai Drive Unit (approx. 25 stations).
-          - topic: 
-            summary: Redesigned Siemens PLC MES transaction library to abstract changing backend data acquisition strategies from machine process implementations.
-          - topic: 
-            summary: Redesigned Siemens PLC MES transaction library to abstract changing backend data acquisition strategies from machine process implementations.
           - topic: Leadership
-            summary: Led a team of 9 controls engineers to deliver Tesla's first international Paint Shop in Shanghai.
+            summary: Led a team of 7 automation engineers managing 6 foreign suppliers to deliver the Vehicle Paint Shop (~\$20M+) for the company's first international factory in Shanghai.
+          - topic: Design Architect
+            summary: Drafted an electrical and network architecture specification and managed its execution by 8 automation engineers leading 14 suppliers of Drive Unit equipment (~\$100M\verb!+!) to three factories on three continents.
+          - topic: Abstraction
+            summary: Redesigned PLC MES transaction libraries to make data transactions transparent to machine process implementations.
       
   - company: EZSoft, Inc.
     location: Malvern, PA
@@ -91,11 +89,12 @@ industry:
         details:
           # - topic: 
           #   summary: Provided on-site support for the R\&D group at a major pharmaceutical company.
-          - topic: Embedded Devices
-            summary: Developed a C\# program and GUI to integrate embedded systems into an industrial control system.
-            #summary: Wrote a custom C\# communication interface and GUI to integrate lab test equipment into an Allen-Bradley control system.
           - topic: Data Acquisition
-            summary: Recorded high-speed data into a SQL Server database and performed statistical analysis to inform process efficiency.
+            summary: Developed a C\# application and GUI to integrate bespoke embedded devices into an industrial control system to inform process efficiency.
+            # summary: Developed a C\# program and GUI to integrate embedded systems into an industrial control system.
+            #summary: Wrote a custom C\# communication interface and GUI to integrate lab test equipment into an Allen-Bradley control system.
+          # - topic: 
+          #   summary: Recorded high-speed data into a SQL Server database and performed statistical analysis to inform process efficiency.
           # - topic: 
           #   summary: Developed the operator interface for a bakery with over twelve hundred I/O points spanning three synchronous Allen-Bradley PLCs.
 

@@ -1,6 +1,7 @@
 \documentclass[11pt]{article}
 
 \usepackage{array}
+\usepackage{amsmath}
 \usepackage{bold-extra}
 \usepackage{comment} % see texblog.org/2007/12/31/commenting-in-latex/ for a cool use.
 \usepackage{enumitem}
@@ -11,7 +12,7 @@
 
 % \renewcommand{\familydefault}{\sfdefault} % use sans serif font
 \usepackage[T1]{fontenc}
-% \usepackage{charter} % most readable serif
+\usepackage{charter} % most readable serif
 % \usepackage{helvet} % computer modern (default (no package)) is second best
 
 % Itemize list padding
@@ -73,11 +74,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {Experience}
 &
-\textbf{Tesla, Inc.}  \hfill Austin, TX\vspace{0.015in} \\ &
+\textbf{Tesla, Inc.}  \hfill Austin, TX \\ &
  
     \textit{Staff Software Engineer \hfill December 2021 -- Present}
         \begin{itemize}[noitemsep,topsep=0pt]
-            \item \textbf{None}: Wrote a Tool Positioning System in Golang to%
+            \item \textbf{Observability}: Implemented Open Telemetry tracing across several Golang applications communicating via gRPC and Kafka, greatly reducing fault analysis time.%
+            \item \textbf{Data Visualization}: Developed an interactive inventory visualization single-page application with React.js, d3, and Golang Fiber that identified discrepancies in real-time.%
+            \item \textbf{a}: a%
  % for detail
         \end{itemize}
  % if item.details
@@ -97,28 +100,27 @@
  
     \textit{Automation Engineer \hfill May 2017 -- April 2018}
         \begin{itemize}[noitemsep,topsep=0pt]
-            \item \textbf{None}: Created custom Tool Positioning System that uses a collection of disparate sensors to govern tool interlock conditions. Integrated into Shanghai Drive Unit (approx. 25 stations).%
-            \item \textbf{None}: Redesigned Siemens PLC MES transaction library to abstract changing backend data acquisition strategies from machine process implementations.%
-            \item \textbf{None}: Led a team of 9 controls engineers to deliver the first Tesla Paint Shop in Shanghai.%
+            \item \textbf{Leadership}: Led a team of 7 automation engineers managing 6 foreign suppliers to deliver the Vehicle Paint Shop (~\$20M+) for the company's first international factory in Shanghai.%
+            \item \textbf{Design Architect}: Drafted an electrical and network architecture specification and managed its execution by 8 automation engineers leading 14 suppliers of Drive Unit equipment (~\$100M\verb!+!) to three factories on three continents.%
+            \item \textbf{Abstraction}: Redesigned PLC MES transaction libraries to make data transactions transparent to machine process implementations.%
  % for detail
         \end{itemize}
  % if item.details
  % for position
 \\
 &
-\textbf{EZSoft, Inc.}  \hfill Malvern, PA\vspace{0.015in} \\ &
+\textbf{EZSoft, Inc.}  \hfill Malvern, PA \\ &
  
     \textit{Automation Engineer \hfill October 2012 -- July 2015}
         \begin{itemize}[noitemsep,topsep=0pt]
-            \item \textbf{None}: Wrote a custom C\# communication interface and GUI to integrate lab test equipment into an Allen-Bradley control system.%
-            \item \textbf{None}: Recorded high-speed data into an SQL database and performed statistical analysis to inform future experiment plans.%
+            \item \textbf{Data Acquisition}: Developed a C\# application and GUI to integrate bespoke embedded devices into an industrial control system to inform process efficiency.%
  % for detail
         \end{itemize}
  % if item.details
  % for position
 \\
 &
-\textbf{Chemical Engr. Dept., University of Pittsburgh}  \hfill Pittsburgh, PA\vspace{0.015in} \\ &
+\textbf{Chemical Engr. Dept., University of Pittsburgh}  \hfill Pittsburgh, PA \\ &
  
     \textit{Process Control Engineer Internship \hfill May 2011 -- December 2011}
  % if item.details
@@ -135,15 +137,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {Education}
 &
-\textbf{Carnegie Mellon University} \hfill December 2016 \vspace{0.015in} \\ &
-Master of Science in Chemical Engineering. 4.0/4.0. \vspace{0.015in}
+\textbf{Carnegie Mellon University} \hfill December 2016 \\ &
+Master of Science in Chemical Engineering. 4.0/4.0. 
 \begin{itemize}
     \item \textbf{Machine Learning}: Thesis on "A neural network potential for nanoporous graphene."
 \end{itemize}
 \\
 &
-\textbf{University of Pittsburgh} \hfill April 2012 \vspace{0.015in} \\ &
-Bachelor of Science in Chemical Engineering. Minor in Computer Science. 3.3/4.0. \vspace{0.015in}
+\textbf{University of Pittsburgh} \hfill April 2012 \\ &
+Bachelor of Science in Chemical Engineering. Minor in Computer Science. 3.3/4.0. 
 \vspace{0.5\baselineskip}
 \\
 \\

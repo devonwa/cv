@@ -1,6 +1,7 @@
 \documentclass[11pt]{article}
 
 \usepackage{array}
+\usepackage{amsmath}
 \usepackage{bold-extra}
 \usepackage{comment} % see texblog.org/2007/12/31/commenting-in-latex/ for a cool use.
 \usepackage{enumitem}
@@ -11,7 +12,7 @@
 
 % \renewcommand{\familydefault}{\sfdefault} % use sans serif font
 \usepackage[T1]{fontenc}
-% \usepackage{charter} % most readable serif
+\usepackage{charter} % most readable serif
 % \usepackage{helvet} % computer modern (default (no package)) is second best
 
 % Itemize list padding
@@ -67,7 +68,7 @@
 {Experience}
 <<* for item in industry *>>
 &
-\textbf{<< item.company >>}  \hfill << item.location >>\vspace{0.015in} \\ &
+\textbf{<< item.company >>}  \hfill << item.location >> \\ &
 <<* for position in item.positions *>> 
     \textit{<< position.title >> \hfill << position.dates >>}
     <<* if position.details *>>
@@ -113,8 +114,8 @@
 {Education}
 <<* for item in education *>>
 &
-\textbf{<< item.school >>} \hfill << item.date >> \vspace{0.015in} \\ &
-<< item.degree >>. << item.gpa >>. \vspace{0.015in}
+\textbf{<< item.school >>} \hfill << item.date >> \\ &
+<< item.degree >>. << item.gpa >>. 
 <<* if item.details *>>
 \begin{itemize}
 <<* for detail in item.details *>>
