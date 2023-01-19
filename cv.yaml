@@ -79,7 +79,7 @@ industry:
           - topic: Design Architect
             summary: Drafted an electrical and network architecture specification and managed its execution by 8 automation engineers leading 14 suppliers of Drive Unit equipment (~\$100M\verb!+!) to three factories on three continents.
           - topic: Abstraction
-            summary: Redesigned PLC MES transaction libraries to make data transactions transparent to machine process implementations.
+            summary: Redesigned PLC MES libraries to make transaction implementations transparent to machine process implementations.
       
   - company: EZSoft, Inc.
     location: Malvern, PA
