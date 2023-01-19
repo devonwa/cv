@@ -8,13 +8,12 @@ info:
   github: github.com/devonwa
   location: Austin, TX
 
-
 skills:
   - type: Programming
     details: Golang, JavaScript, TypeScript, Python, SQL, Make, C\#, Java, HTML/CSS
 
   - type: Frameworks
-    details: React.js, Playwright, Gorilla (REST), SciPy
+    details: React.js, Playwright, gorilla/mux, SciPy
 
   - type: Databases
     details: MySQL, Kafka, Prometheus, Redis, FoundationDB, BoltDB
@@ -25,10 +24,9 @@ skills:
 
   # - type: Expertise
   #   details: Proficient in Object Oriented Programming, Networking and Communication of Factory Controls Systems, Process Modeling and Optimization. Familiar with Machine Learning, Front-end Browser Development.
-    
+
   #- type: Expertise
   #  details: Simulation, Machine Learning, Process Modeling, Cross-disciplinary Design, Process Optimization
-
 
 # Topics:
 # Data Modeling
@@ -53,7 +51,6 @@ skills:
 # lead paint team
 # lead du shops (global)
 
-
 industry:
   - company: Tesla, Inc.
     location: Austin, TX
@@ -62,11 +59,13 @@ industry:
         dates: December 2021 -- Present
         details:
           - topic: Data Visualization
-            summary: Developed an interactive inventory visualization single-page application with React.js, d3, and Golang Fiber that identified discrepancies in real-time.
+            summary: Developed an interactive inventory visualization application with React.js, d3, svgs, and Golang Fiber that allowed Operations to identify physical inventory discrepancies in real-time.
           - topic: Observability
-            summary: Implemented Open Telemetry tracing across several Golang applications communicating via gRPC and Kafka, greatly reducing failure analysis time.
-          - topic: a
-            summary: a
+            summary: Implemented Open Telemetry tracing across several Golang applications communicating via gRPC and Kafka, greatly reducing fault root cause analysis time.
+          - topic: API Design
+            summary: Created REST APIs using gorilla/mux to enable complex quality data interactions between industrial scanners, lineside systems, and MES systems.
+          - topic: Serial Protocols
+            summary: Developed applications that connected Golang applications to production line test equipment communicating with custom serial protocols on TCP sockets.
       - title: Staff Automation Engineer
         dates: December 2019 -- December 2021
       - title: Senior Automation Engineer
@@ -80,22 +79,22 @@ industry:
             summary: Drafted an electrical and network architecture specification and managed its execution by 8 automation engineers leading 14 suppliers of Drive Unit equipment (~\$100M\verb!+!) to three factories on three continents.
           - topic: Abstraction
             summary: Redesigned PLC MES libraries to make transaction implementations transparent to machine process implementations.
-      
+
   - company: EZSoft, Inc.
     location: Malvern, PA
     positions:
       - title: Automation Engineer
         dates: October 2012 -- July 2015
         details:
-          # - topic: 
+          # - topic:
           #   summary: Provided on-site support for the R\&D group at a major pharmaceutical company.
           - topic: Data Acquisition
             summary: Developed a C\# application and GUI to integrate bespoke embedded devices into an industrial control system to inform process efficiency.
             # summary: Developed a C\# program and GUI to integrate embedded systems into an industrial control system.
             #summary: Wrote a custom C\# communication interface and GUI to integrate lab test equipment into an Allen-Bradley control system.
-          # - topic: 
+          # - topic:
           #   summary: Recorded high-speed data into a SQL Server database and performed statistical analysis to inform process efficiency.
-          # - topic: 
+          # - topic:
           #   summary: Developed the operator interface for a bakery with over twelve hundred I/O points spanning three synchronous Allen-Bradley PLCs.
 
   # - company: Classic Industries
@@ -103,8 +102,8 @@ industry:
   #   title: Quality Engineer (Contract position)
   #   dates: August 2012 -- September 2012
   #   details:
-      #  - topic: 
-      #    summary: Documented polymer mold qualifications for a merger of two production plants.
+  #  - topic:
+  #    summary: Documented polymer mold qualifications for a merger of two production plants.
 
   # - company: US Liner Company
   #   location: Cranberry Twp, PA
@@ -112,24 +111,23 @@ industry:
   #     - title: Research Engineer Internship
   #       dates: January 2012 -- May 2012
   #       details:
-          #- Furthered product development by testing polymer materials using ASTM standards.
-          # - Tested polymer products against ASTM standards with an Instron machine to determine the best material candidates for product development efforts.
-          # - Prepared research summary reports for superiors to compare the best candidates for materials and processes.
+  #- Furthered product development by testing polymer materials using ASTM standards.
+  # - Tested polymer products against ASTM standards with an Instron machine to determine the best material candidates for product development efforts.
+  # - Prepared research summary reports for superiors to compare the best candidates for materials and processes.
 
   - company: Chemical Engr. Dept., University of Pittsburgh
     location: Pittsburgh, PA
     positions:
       - title: Process Control Engineer Internship
         dates: May 2011 -- December 2011
-  #     details: 
+  #     details:
   #       - Rewrote LabView control systems for 6 chemical engineering lab experiments.
-        #- Modeled a double-pipe heat exchanger experiment using first principles in Simulink and wrote the lab manual for student use.
+  #- Modeled a double-pipe heat exchanger experiment using first principles in Simulink and wrote the lab manual for student use.
 
   #- company: The Cartilage Restoration Center, UPMC
   #  location: Pittsburgh, PA
   #  title: Website Developer Internship
   #  dates: August 2010 -- April 2011
-
 
 education:
   - school: Carnegie Mellon University
@@ -138,7 +136,7 @@ education:
     date: December 2016
     details:
       - topic: Machine Learning
-        summary: "Thesis on \"A neural network potential for nanoporous graphene.\""
+        summary: 'Thesis on "A neural network potential for nanoporous graphene."'
 
   - school: University of Pittsburgh
     degree: Bachelor of Science in Chemical Engineering. Minor in Computer Science
@@ -147,7 +145,6 @@ education:
 
   #- school: Cedar Crest High School (Lebanon, PA)
   #  date: April 2008
-
 
 # research:
 #   - name: Carnegie Mellon University
@@ -161,7 +158,6 @@ education:
 #           # - Python code for simulations and neural network training were executed in parallel on a Linux-based cluster.
 #           # - Performed \textit{ab initio} calculations using DFT with VASP on algorithmically generated graphene defect structures.
 #           # - Developed neural networks to use as potentials in MD simulations with the accuracy of DFT and a computational cost similar to physical potentials.
-
 
 # presentations:
 #   - "\\textbf{D. Walker*}, J. Kitchin. Minimum energy search over graphene defect structures using a neural network potential. Poster presentation at the 2016 ChEGSA Symposium, Carnegie Mellon University, Pittsburgh, PA. October 21, 2016. DOI: \\href{https://doi.org/10.5281/zenodo.188625}{10.5281/zenodo.188625}."
@@ -177,11 +173,9 @@ education:
 #  - location: Carnegie Mellon University, Pittsburgh, PA
 #  - url: https://doi.org/10.5281/zenodo.188625
 
-
 certificates:
   - name: Fundamentals of Engineering Exam (EIT)
     date: April 2012
-
 
 affiliations:
   - organization: American Institute of Chemical Engineers
@@ -191,7 +185,6 @@ affiliations:
   - organization: Order of the Engineer
     title: Member
     dates: 2012 -- Present
-
 
 community:
   - type: North Light Community Center
