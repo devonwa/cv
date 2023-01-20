@@ -52,7 +52,7 @@ Process Control Engineer Internship <span class="pull-right">May 2011 -- Decembe
 **Carnegie Mellon University** <span class="pull-right">December 2016</span><br />
 Master of Science in Chemical Engineering 4.0/4.0.<br />
 
-* {'topic': 'Machine Learning', 'summary': 'Thesis on "A neural network potential for nanoporous graphene." Performed molecular simulations on nanoporous graphene to train a feedforward neural network capable of replicating a Density Functional Theory exchange potential.'}
+* {'topic': 'Machine Learning', 'summary': 'Performed molecular simulations on nanoporous graphene to train a feedforward neural network to replicate the a Density Functional Theory exchange potential, reducing future simulations by hours per experiment.'}
 <br />
 **University of Pittsburgh** <span class="pull-right">April 2012</span><br />
 Bachelor of Science in Chemical Engineering. Minor in Computer Science 3.3/4.0.<br />
@@ -71,7 +71,7 @@ Bachelor of Science in Chemical Engineering. Minor in Computer Science 3.3/4.0.<
 **Databases:** MySQL, Kafka, Prometheus, Redis, FoundationDB, BoltDB
 <br />
 <br />
-**Tools:** Linux, Git, Kubernetes, Docker, Ansible, Vault, Github, Graphana, Splunk, Vim
+**Tools:** Linux, Git, Kubernetes, Docker, Ansible, Vault, Github, Graphana, Splunk, Nix
 <br />
 
 ## Certificates

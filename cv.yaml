@@ -19,7 +19,7 @@ skills:
     details: MySQL, Kafka, Prometheus, Redis, FoundationDB, BoltDB
 
   - type: Tools
-    details: Linux, Git, Kubernetes, Docker, Ansible, Vault, Github, Graphana, Splunk, Vim
+    details: Linux, Git, Kubernetes, Docker, Ansible, Vault, Github, Graphana, Splunk, Nix
     # Jenkins, Helm, Open Telemetry, Storybook
 
   # - type: Expertise
@@ -59,15 +59,15 @@ industry:
         dates: December 2021 -- Present
         details:
           - topic: Data Visualization
-            summary: Developed an interactive inventory visualization application with React.js, d3 with SVGs, and Golang Fiber that allowed Operations to identify physical inventory discrepancies in real-time.
+            summary: Designed an interactive inventory visualization application with React.js, d3 with SVGs, and Golang Fiber that allowed material flow teams to identify physical inventory discrepancies and reduced part-shortage production downtimes.
           - topic: Observability
-            summary: Implemented Open Telemetry tracing across several Golang applications communicating via gRPC and Kafka, greatly reducing fault root cause analysis time.
+            summary: Implemented Open Telemetry tracing across several Golang applications communicating via gRPC and Kafka, greatly reducing fault analysis time.
           - topic: Human Machine Interface
-            summary: Developed a tool positioning system in Golang to enable a production worker's torque tool only when the tool is in the correct physical position, as detected by laser and proximity sensors communicating via ModbusTCP.
+            summary: Developed a tool positioning system in Golang to enable use of a production worker's torque tool only when the tool is in the correct physical position, as detected by laser and proximity sensors communicating via ModbusTCP.
           - topic: API Design
             summary: Created REST APIs using gorilla/mux to enable complex quality data interactions between industrial scanners, lineside systems, and MES systems.
           - topic: Serial Protocols
-            summary: Developed applications that connected Golang applications to production line test equipment communicating with custom serial protocols on TCP sockets.
+            summary: Connected Golang applications to production line test equipment communicating with custom serial protocols on TCP sockets. 
       - title: Staff Automation Engineer
         dates: December 2019 -- December 2021
       - title: Senior Automation Engineer
@@ -76,11 +76,13 @@ industry:
         dates: May 2017 -- April 2018
         details:
           - topic: Leadership
-            summary: Led a team of 7 automation engineers managing 6 foreign suppliers to deliver the control system of the Vehicle Paint Shop (~\$20M+) for the company's first international factory in Shanghai.
+            summary: Led a team of 7 engineers managing 6 foreign suppliers to deliver the control system of the Vehicle Paint Shop for the company's first international factory in Shanghai.
           - topic: Design Architect
-            summary: Drafted an electrical and network architecture specification and managed its execution by 8 automation engineers leading 14 suppliers of Drive Unit equipment (~\$100M\verb!+!) to three factories on three continents.
+            summary: Drafted an electrical and network architecture specification and managed its execution by 8 automation engineers leading 14 suppliers of Drive Unit production lines (~\$100M\verb!+!) to three factories on three continents.
           - topic: Abstraction
             summary: Redesigned PLC MES libraries to make transaction implementations transparent to machine process implementations.
+          - topic: Management
+            summary: Mentored a team of 7 direct reports and conducted over 150 interviews.
 
   - company: EZSoft, Inc.
     location: Malvern, PA
@@ -91,7 +93,7 @@ industry:
           # - topic:
           #   summary: Provided on-site support for the R\&D group at a major pharmaceutical company.
           - topic: Data Acquisition
-            summary: Developed a C\# application and GUI to integrate bespoke embedded devices into an industrial control system to inform process efficiency.
+            summary: Developed a C\# application and GUI to integrate bespoke embedded devices into an industrial control system for sub-second RF process control.
             # summary: Developed a C\# program and GUI to integrate embedded systems into an industrial control system.
             #summary: Wrote a custom C\# communication interface and GUI to integrate lab test equipment into an Allen-Bradley control system.
           # - topic:
@@ -138,7 +140,7 @@ education:
     date: December 2016
     details:
       - topic: Machine Learning
-        summary: 'Thesis on "A neural network potential for nanoporous graphene." Performed molecular simulations on nanoporous graphene to train a feedforward neural network capable of replicating a Density Functional Theory exchange potential.'
+        summary: Performed molecular simulations on nanoporous graphene to train a feedforward neural network to replicate the a Density Functional Theory exchange potential, reducing future simulations by hours per experiment.
 
   - school: University of Pittsburgh
     degree: Bachelor of Science in Chemical Engineering. Minor in Computer Science
@@ -147,6 +149,11 @@ education:
 
   #- school: Cedar Crest High School (Lebanon, PA)
   #  date: April 2008
+
+projects:
+  - name: This Resume
+    description: Generate multi-platform CV templates from YAML using Jinja2 and \LaTeX.
+
 
 # research:
 #   - name: Carnegie Mellon University

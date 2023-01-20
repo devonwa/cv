@@ -123,12 +123,19 @@
 <<* endfor *>>
 \end{itemize}
 <<* else *>>
-\vspace{0.5\baselineskip}
+% \vspace{0.5\baselineskip}
 <<* endif *>>
 \\
 <<* endfor *>>
 \\
 
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% {Projecs}
+<<* for item in projects *>>
+% &
+% \textbf{<< item.name >>} << item.description >> \\ &
+<<* endfor *>>
 \end{tabular}
 
 \end{document}
