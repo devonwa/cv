@@ -37,7 +37,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Info
 \noindent
-\begin{tabularx}{\textwidth}{@{}X r@{}}
+\begin{tabularx}{\textwidth}{@{}X@{} r@{}}
   \huge << info.name >> & {
     \begin{tabular}{r@{}}
         \href{<< info.email >>}{<< info.email >>} | << info.phone >> | << info.location >>\\
@@ -50,7 +50,7 @@
 \vspace{0.7\baselineskip}
 
 \noindent
-\begin{tabular}[t]{@{}p{1.05in} @{}p{6.00in}}
+\begin{tabular}[t]{@{}p{1.00in}@{} @{}p{6.00in}@{}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {Skills}
@@ -114,8 +114,9 @@
 {Education}
 <<* for item in education *>>
 &
-\textbf{<< item.school >>} \hfill << item.date >> \\ &
-<< item.degree >>. << item.gpa >>. 
+\textbf{<< item.school >>} \hfill << item.location >> \\ &
+\textit{<< item.degree >>. << item.gpa >>. \hfill << item.date >>}
+<<* if item.minor *>>\\ &\textit{Minor in << item.minor >>.}<<* endif *>>
 <<* if item.details *>>
 \begin{itemize}
 <<* for detail in item.details *>>

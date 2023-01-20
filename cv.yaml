@@ -59,7 +59,7 @@ industry:
         dates: December 2021 -- Present
         details:
           - topic: Data Visualization
-            summary: Designed an interactive inventory visualization application with React.js, d3 with SVGs, and Golang Fiber that allowed material flow teams to identify physical inventory discrepancies and reduced part-shortage production downtimes.
+            summary: Designed an interactive inventory visualization application with React.js, d3 with SVGs, and Golang Fiber that allowed material flow teams to identify physical inventory discrepancies and reduce part-shortage production downtimes.
           - topic: Observability
             summary: Implemented Open Telemetry tracing across several Golang applications communicating via gRPC and Kafka, greatly reducing fault analysis time.
           - topic: Human Machine Interface
@@ -67,7 +67,7 @@ industry:
           - topic: API Design
             summary: Created REST APIs using gorilla/mux to enable complex quality data interactions between industrial scanners, lineside systems, and MES systems.
           - topic: Serial Protocols
-            summary: Connected Golang applications to production line test equipment communicating with custom serial protocols on TCP sockets. 
+            summary: Connected Golang applications to production line test equipment communicating with custom serial protocols on TCP sockets.
       - title: Staff Automation Engineer
         dates: December 2019 -- December 2021
       - title: Senior Automation Engineer
@@ -90,12 +90,12 @@ industry:
       - title: Automation Engineer
         dates: October 2012 -- July 2015
         details:
-          # - topic:
-          #   summary: Provided on-site support for the R\&D group at a major pharmaceutical company.
           - topic: Data Acquisition
             summary: Developed a C\# application and GUI to integrate bespoke embedded devices into an industrial control system for sub-second RF process control.
             # summary: Developed a C\# program and GUI to integrate embedded systems into an industrial control system.
             #summary: Wrote a custom C\# communication interface and GUI to integrate lab test equipment into an Allen-Bradley control system.
+          # - topic:
+          #   summary: Provided on-site support for the R\&D group at a major pharmaceutical company.
           # - topic:
           #   summary: Recorded high-speed data into a SQL Server database and performed statistical analysis to inform process efficiency.
           # - topic:
@@ -135,15 +135,18 @@ industry:
 
 education:
   - school: Carnegie Mellon University
+    location: Pittsburgh, PA
     degree: Master of Science in Chemical Engineering
     gpa: 4.0/4.0
     date: December 2016
     details:
       - topic: Machine Learning
-        summary: Performed molecular simulations on nanoporous graphene to train a feedforward neural network to replicate the a Density Functional Theory exchange potential, reducing future simulations by hours per experiment.
+        summary: Thesis involved performimg hundreds of molecular simulations on nanoporous graphene to train a feedforward neural network to replicate a Density Functional Theory exchange potential, reducing future simulation times by >99\%.
 
   - school: University of Pittsburgh
-    degree: Bachelor of Science in Chemical Engineering. Minor in Computer Science
+    location: Pittsburgh, PA
+    degree: Bachelor of Science in Chemical Engineering
+    minor: Computer Science
     gpa: 3.3/4.0
     date: April 2012
 
@@ -153,7 +156,6 @@ education:
 projects:
   - name: This Resume
     description: Generate multi-platform CV templates from YAML using Jinja2 and \LaTeX.
-
 
 # research:
 #   - name: Carnegie Mellon University
