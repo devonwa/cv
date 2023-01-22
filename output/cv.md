@@ -52,7 +52,7 @@ Process Control Engineer Internship <span class="pull-right">May 2011 -- Decembe
 **Carnegie Mellon University** <span class="pull-right">December 2016</span><br />
 Master of Science in Chemical Engineering 4.0/4.0.<br />
 
-* {'topic': 'Machine Learning', 'summary': 'Thesis involved performimg hundreds of molecular simulations on nanoporous graphene to train a feedforward neural network to replicate a Density Functional Theory exchange potential, reducing future simulation times by >99\\%.'}
+* {'topic': 'Machine Learning', 'summary': 'Thesis involved performing hundreds of molecular simulations on nanoporous graphene to train a feedforward neural network to replicate a Density Functional Theory exchange potential, reducing future simulation times by >99\\%.'}
 <br />
 **University of Pittsburgh** <span class="pull-right">April 2012</span><br />
 Bachelor of Science in Chemical Engineering 3.3/4.0.<br />

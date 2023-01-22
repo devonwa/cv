@@ -141,7 +141,7 @@ education:
     date: December 2016
     details:
       - topic: Machine Learning
-        summary: Thesis involved performimg hundreds of molecular simulations on nanoporous graphene to train a feedforward neural network to replicate a Density Functional Theory exchange potential, reducing future simulation times by >99\%.
+        summary: Thesis involved performing hundreds of molecular simulations on nanoporous graphene to train a feedforward neural network to replicate a Density Functional Theory exchange potential, reducing future simulation times by >99\%.
 
   - school: University of Pittsburgh
     location: Pittsburgh, PA
