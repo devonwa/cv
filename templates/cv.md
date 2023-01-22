@@ -21,36 +21,44 @@ title: CV
 </div>
 </div>
 <div class="col-xs-4">
-<img class="img-responsive img-circle cv-pic" src="../static/image/2014-10-05-me-head-100x100.jpg" />
+<img class="img-responsive img-circle cv-pic" src="../static/image/profile_pic.png" />
 </div>
 </div>
 
-## Industry
+
+## Skills
+<hr>
+
+{% for item in skills %}
+**{{ item.type }}:** {{ item.details }}<br />
+{% endfor %}
+
+
+## Experience
 <hr>
 
 {% for item in industry %}
 **{{ item.company }}** <span class="pull-right">{{ item.location }}</span><br />
 {% for position in item.positions %}
-{{ position.title }} <span class="pull-right">{{ position.dates }}</span><br />
+<i>{{ position.title }} <span class="pull-right">{{ position.dates }}</span></i><br />
+{% if position.details %}
+{% for detail in position.details %}
+* <b>{{ detail.topic }}</b>: {{ detail.summary }}
 {% endfor %}
-
-{% if item.details %}
-{% for detail in item.details %}
-{% if detail is string %}
-* {{ detail }}
-{% else %}
-{% for subdetail in detail %}
-  * {{ subdetail }}
-{% endfor %}
+<br />
 {% endif %}
 
 {% endfor %}
-{% endif %}
+
+
 {% if not loop.last %}
 <br />
 {% endif %}
+
+
 {% endfor %}
 
+<!-- 
 ## Research
 <hr>
 
@@ -68,39 +76,25 @@ title: CV
 {% endif %}
 {% endfor %}
 <br />
-{% endfor %}
+{% endfor %} 
+-->
 
 ## Education
 <hr>
 
 {% for item in education %}
-**{{ item.school }}** <span class="pull-right">{{ item.date }}</span><br />
-{{ item.degree }} {{ item.gpa }}.<br />
+**{{ item.school }}** <span class="pull-right">{{ item.location }}</span><br />
+<i>{{ item.degree }} {{ item.gpa }}. <span class="pull-right">{{ item.date }}</span></i><br />
+{% if item.minor %}<i>Minor in {{ item.minor }}.</i><br />{% endif %}
 
 {% if item.details %}
 {% for detail in item.details %}
-* {{ detail }}
+* **{{ detail.topic }}**: {{ detail.summary }}
 {% endfor %}
 {% endif %}
+
 <br />
-{% endfor %}
 
-## Skills
-<hr>
-
-{% for item in skills %}
-**{{ item.type }}:** {{ item.details }}
-<br />
-{% if not loop.last %}
-<br />
-{% endif %}
-{% endfor %}
-
-## Certificates
-<hr>
-
-{% for item in certificates %}
-**{{ item.name }}** <span class="pull-right">{{ item.date }}</span>
 {% endfor %}
 
 </div>
