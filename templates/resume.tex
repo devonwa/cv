@@ -41,7 +41,8 @@
   \huge << info.name >> & {
     \begin{tabular}{r@{}}
         \href{<< info.email >>}{<< info.email >>} | << info.phone >> | << info.location >>\\
-        \href{http://<< info.site >>}{<< info.site >>} | \href{http://<< info.linkedin >>}{<< info.linkedin >>} | \href{http://<< info.github >>}{<< info.github >>} \\
+        \href{http://<< info.linkedin >>}{<< info.linkedin >>} | \href{http://<< info.github >>}{<< info.github >>} \\
+        %\href{http://<< info.site >>}{<< info.site >>} | \href{http://<< info.linkedin >>}{<< info.linkedin >>} | \href{http://<< info.github >>}{<< info.github >>} \\
     \end{tabular}
   }\\
 \end{tabularx}
@@ -115,7 +116,7 @@
 <<* for item in education *>>
 &
 \textbf{<< item.school >>} \hfill << item.location >> \\ &
-\textit{<< item.degree >>. << item.gpa >>. \hfill << item.date >>}
+\textit{<< item.degree >>. \hfill << item.date >>}
 <<* if item.minor *>>\\ &\textit{Minor in << item.minor >>.}<<* endif *>>
 <<* if item.details *>>
 \begin{itemize}
